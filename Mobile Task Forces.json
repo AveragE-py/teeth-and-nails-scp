@@ -104,7 +104,7 @@
     ],
     "sharedProfiles": [
       {
-        "name": "Rifile",
+        "name": "Rifle",
         "id": "ba15-c9a9-076e-b8b8",
         "hidden": false,
         "typeId": "2a97-745a-d6ae-3fad",
@@ -234,7 +234,7 @@
         "characteristics": [
           {
             "name": "Rule",
-            "$text": "When this unit deals at least one damage to an opponent's unit with a ranged attack, the target gains a Suffering Modifier.. This unit cannot gain Suffering Modifier because of an opponent's attack with this Special Rule.",
+            "$text": "When this unit deals at least one damage to an opponent's unit with a ranged attack, the target gains a Suffering Modifier. This unit cannot gain Suffering Modifier because of an opponent's attack with this Special Rule.",
             "typeId": "89ed-d006-3f84-1055"
           }
         ]
@@ -267,7 +267,7 @@
         ]
       },
       {
-        "name": "Gas Granade Launcher",
+        "name": "Gas Grenade Launcher",
         "id": "e297-46f6-804c-8f71",
         "hidden": false,
         "typeId": "2a97-745a-d6ae-3fad",
@@ -278,14 +278,6 @@
           {"name": "Inaccuracy", "$text": "1", "typeId": "236d-de8a-045b-a916"},
           {"name": "Lethality", "$text": "6", "typeId": "b12a-510f-75b3-fb88"}
         ]
-      },
-      {
-        "name": "Heavy Fire",
-        "id": "41ba-5a5f-bd7a-79dc",
-        "hidden": false,
-        "typeId": "425f-28ce-00a4-b4fa",
-        "typeName": "Special Rule",
-        "characteristics": [{"name": "Rule", "$text": "", "typeId": "89ed-d006-3f84-1055"}]
       },
       {
         "name": "Shaken",
@@ -889,7 +881,7 @@
         "constraints": [{"id": "73f6-64a4-5dff-f83b", "field": "selections", "scope": "9ce8-baf7-935f-058b", "shared": true, "type": "max", "value": 3}],
         "profiles": [
           {
-            "name": "Assault Squad with Flamewthrowers",
+            "name": "Assault Squad with Flamethrowers",
             "id": "d951-ffa0-46e9-d908",
             "hidden": false,
             "typeId": "e269-6310-f011-664b",
@@ -1020,11 +1012,12 @@
               {"id": "9c73-4503-81fb-314f-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "9c73-4503-81fb-314f-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 185}],
+            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 180}],
             "infoLinks": [
               {"name": "Suppressing Fire", "id": "d8b1-5b87-bf98-6d20", "hidden": false, "targetId": "a28b-d1aa-bcf3-ba1d", "type": "profile"},
               {"name": "Vehicle", "id": "620a-06e2-bf5c-8e37", "hidden": false, "targetId": "cc65-188f-d496-f47a", "type": "profile"},
-              {"name": "Superior Firepower", "id": "ed4b-4f60-3f82-207e", "hidden": false, "targetId": "3180-9bbf-ffdc-e378", "type": "profile"}
+              {"name": "Superior Firepower", "id": "ed4b-4f60-3f82-207e", "hidden": false, "targetId": "3180-9bbf-ffdc-e378", "type": "profile"},
+              {"name": "Armor Piercing", "id": "4c4b-b1f4-b15a-6619", "hidden": false, "targetId": "abe5-fee9-d82a-5aed", "type": "profile"}
             ],
             "profiles": [
               {
@@ -1127,8 +1120,9 @@
             ],
             "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 44}],
             "infoLinks": [
-              {"name": "Rifle (Extended Range)", "id": "625d-4ce3-31f8-decf", "hidden": false, "targetId": "0ef9-cdc6-55d8-c176", "type": "profile"},
-              {"name": "Elite", "id": "10aa-2f4a-905a-9ad4", "hidden": false, "targetId": "eb66-6f5d-b1cf-d1bb", "type": "profile"}
+              {"name": "Team-Operated Light AT Auto-Cannon", "id": "625d-4ce3-31f8-decf", "hidden": false, "targetId": "19d7-3915-2ec7-2372", "type": "profile"},
+              {"name": "Elite", "id": "10aa-2f4a-905a-9ad4", "hidden": false, "targetId": "eb66-6f5d-b1cf-d1bb", "type": "profile"},
+              {"name": "Armor Piercing", "id": "4527-ce80-37f0-d085", "hidden": false, "targetId": "abe5-fee9-d82a-5aed", "type": "profile"}
             ],
             "profiles": [
               {
@@ -1314,7 +1308,8 @@
             "infoLinks": [
               {"name": "Suppressing Fire", "id": "3b57-c9c6-ab3e-8a1c", "hidden": false, "targetId": "a28b-d1aa-bcf3-ba1d", "type": "profile"},
               {"name": "Vehicle", "id": "7e32-f9a8-08a5-a075", "hidden": false, "targetId": "cc65-188f-d496-f47a", "type": "profile"},
-              {"name": "Superior Firepower", "id": "e569-d128-8ae5-468c", "hidden": false, "targetId": "3180-9bbf-ffdc-e378", "type": "profile"}
+              {"name": "Superior Firepower", "id": "e569-d128-8ae5-468c", "hidden": false, "targetId": "3180-9bbf-ffdc-e378", "type": "profile"},
+              {"name": "Armor Piercing", "id": "529b-1503-1872-0744", "hidden": false, "targetId": "abe5-fee9-d82a-5aed", "type": "profile"}
             ],
             "profiles": [
               {

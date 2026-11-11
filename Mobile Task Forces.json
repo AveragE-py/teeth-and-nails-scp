@@ -45,6 +45,22 @@
         "import": true,
         "targetId": "50cf-2e06-dfaf-1b25",
         "type": "selectionEntry"
+      },
+      {
+        "name": "Veteran Heavy-Armored Assault Squad",
+        "id": "4d00-2ec1-9d50-5007",
+        "hidden": false,
+        "import": true,
+        "targetId": "9894-ebe7-33d4-389c",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Heavy-Armored Assault Squad",
+        "id": "8f92-d6ae-dd7f-fdad",
+        "hidden": false,
+        "import": true,
+        "targetId": "79d5-34ef-e51a-9ebc",
+        "type": "selectionEntry"
       }
     ],
     "forceEntries": [

@@ -196,7 +196,7 @@
         ],
         "selectionEntries": [
           {
-            "name": "MTF Infantryman w/LMG",
+            "name": "MTF Infantryman w/Rifle",
             "id": "8d84-c707-cfc7-db59",
             "hidden": false,
             "import": true,
@@ -219,7 +219,7 @@
             ]
           },
           {
-            "name": "MTF Infantryman w/Rifle",
+            "name": "MTF Infantryman w/LMG",
             "id": "4c71-f352-b960-5ef7",
             "hidden": false,
             "import": true,

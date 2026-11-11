@@ -10,7 +10,12 @@
     "type": "catalogue",
     "categoryEntries": [
       {"name": "Commanders", "id": "e25e-c8c4-a359-8fc9", "hidden": false},
-      {"name": "Veteran Units", "id": "05b5-e65d-55f6-ba98", "hidden": false},
+      {
+        "name": "Veteran Units",
+        "id": "05b5-e65d-55f6-ba98",
+        "hidden": false,
+        "constraints": [{"id": "fc3d-8585-921a-f384", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 3}]
+      },
       {"name": "Regular Units", "id": "9ce8-baf7-935f-058b", "hidden": false}
     ],
     "entryLinks": [

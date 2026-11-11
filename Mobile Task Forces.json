@@ -6,7 +6,7 @@
     "gameSystemId": "sys-352a-7a4d-9d8b-ffc1",
     "gameSystemRevision": 1,
     "library": false,
-    "revision": 2,
+    "revision": 4,
     "type": "catalogue",
     "categoryEntries": [
       {"name": "Commanders", "id": "e25e-c8c4-a359-8fc9", "hidden": false},
@@ -20,7 +20,7 @@
     ],
     "entryLinks": [
       {
-        "name": "Anomalous Extraction Infantry",
+        "name": "Regular MTF Infantry Squad",
         "id": "613c-43d3-59dd-0274",
         "hidden": false,
         "import": true,
@@ -63,7 +63,7 @@
         "type": "selectionEntry"
       },
       {
-        "name": "Assault Squad with Flamewthrowers",
+        "name": "Assault Squad with Flamethrowers",
         "id": "ef6d-7433-c01b-0967",
         "hidden": false,
         "import": true,
@@ -79,15 +79,8 @@
         "type": "selectionEntry"
       },
       {"name": "M2A2 Bradley IFV", "id": "2498-fefd-ff48-2831", "hidden": false, "import": true, "targetId": "2eff-e6e8-9cfa-82b7", "type": "selectionEntry"},
-      {
-        "name": "Anomaly Containment Specialists",
-        "id": "68d2-2e5d-fb49-0eaf",
-        "hidden": false,
-        "import": true,
-        "targetId": "8639-41fd-157c-a59a",
-        "type": "selectionEntry"
-      },
-      {"name": "Anti-Tank Specialists", "id": "c2f4-2cdc-62c3-ec33", "hidden": false, "import": true, "targetId": "d1e4-bc83-9921-6468", "type": "selectionEntry"},
+      {"name": "Anomaly Containment Squad", "id": "68d2-2e5d-fb49-0eaf", "hidden": false, "import": true, "targetId": "8639-41fd-157c-a59a", "type": "selectionEntry"},
+      {"name": "Anti-Tank Infantry Squad", "id": "c2f4-2cdc-62c3-ec33", "hidden": false, "import": true, "targetId": "d1e4-bc83-9921-6468", "type": "selectionEntry"},
       {"name": "M1296 Dragoon", "id": "ffab-edb7-6fa1-7247", "hidden": false, "import": true, "targetId": "107f-edea-5b5d-ecea", "type": "selectionEntry"}
     ],
     "forceEntries": [
@@ -348,8 +341,8 @@
         "characteristics": [
           {"name": "Range", "$text": "18", "typeId": "28ac-0754-369d-5aa6"},
           {"name": "Strength", "$text": "1", "typeId": "c873-8ead-8fa4-1107"},
-          {"name": "Inaccuracy", "$text": "3", "typeId": "236d-de8a-045b-a916"},
-          {"name": "Lethality", "$text": "8 + Armor Piercing", "typeId": "b12a-510f-75b3-fb88"}
+          {"name": "Inaccuracy", "$text": "4", "typeId": "236d-de8a-045b-a916"},
+          {"name": "Lethality", "$text": "6 + Armor Piercing", "typeId": "b12a-510f-75b3-fb88"}
         ]
       },
       {
@@ -402,7 +395,7 @@
               {"id": "e29b-3401-5c88-d035", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 6}
             ],
             "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 12}],
-            "infoLinks": [{"name": "Rfile", "id": "6267-2f28-6265-f303", "hidden": false, "targetId": "ba15-c9a9-076e-b8b8", "type": "profile"}],
+            "infoLinks": [{"name": "Rifle", "id": "6267-2f28-6265-f303", "hidden": false, "targetId": "ba15-c9a9-076e-b8b8", "type": "profile"}],
             "profiles": [
               {
                 "name": "MTF Infantryman",
@@ -497,7 +490,7 @@
               {"id": "00f5-b68d-3c9e-b681", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 4}
             ],
             "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 12}],
-            "infoLinks": [{"name": "Rfile", "id": "4d51-482e-5db9-9e0e", "hidden": false, "targetId": "ba15-c9a9-076e-b8b8", "type": "profile"}],
+            "infoLinks": [{"name": "Rifle", "id": "4d51-482e-5db9-9e0e", "hidden": false, "targetId": "ba15-c9a9-076e-b8b8", "type": "profile"}],
             "profiles": [
               {
                 "name": "MTF Infantryman",
@@ -704,7 +697,7 @@
             ],
             "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 24}],
             "infoLinks": [
-              {"name": "Rifile", "id": "b99d-73c7-c17c-4677", "hidden": false, "targetId": "ba15-c9a9-076e-b8b8", "type": "profile"},
+              {"name": "Rifle", "id": "b99d-73c7-c17c-4677", "hidden": false, "targetId": "ba15-c9a9-076e-b8b8", "type": "profile"},
               {"name": "Elite", "id": "e001-054c-bc95-af89", "hidden": false, "targetId": "eb66-6f5d-b1cf-d1bb", "type": "profile"}
             ],
             "profiles": [
@@ -801,9 +794,9 @@
               {"id": "6e0b-1c36-1072-01b8", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 3},
               {"id": "3a28-b7e8-e3d2-d21a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 8}
             ],
-            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 14}],
+            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 16}],
             "infoLinks": [
-              {"name": "Rifile", "id": "c183-c793-1d73-3200", "exportable": false, "hidden": false, "targetId": "ba15-c9a9-076e-b8b8", "type": "profile"},
+              {"name": "Rifle", "id": "c183-c793-1d73-3200", "exportable": false, "hidden": false, "targetId": "ba15-c9a9-076e-b8b8", "type": "profile"},
               {"name": "Heavy Armor", "id": "2714-0acc-7c70-275d", "hidden": false, "targetId": "21dc-a79d-9410-e761", "type": "profile"}
             ],
             "profiles": [
@@ -854,7 +847,7 @@
             ],
             "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 16}],
             "infoLinks": [
-              {"name": "Rifile", "id": "3b34-50b0-4575-8a41", "exportable": false, "hidden": false, "targetId": "ba15-c9a9-076e-b8b8", "type": "profile"},
+              {"name": "Rifle", "id": "3b34-50b0-4575-8a41", "exportable": false, "hidden": false, "targetId": "ba15-c9a9-076e-b8b8", "type": "profile"},
               {"name": "Heavy Armor", "id": "7263-786a-77f6-d323", "hidden": false, "targetId": "21dc-a79d-9410-e761", "type": "profile"},
               {"name": "Veteran", "id": "db06-651f-7fb5-f1bc", "hidden": false, "targetId": "e2ee-ccb3-270f-e3d7", "type": "profile"}
             ],
@@ -963,7 +956,7 @@
             "infoLinks": [
               {"name": "Biowarfare Specialist", "id": "7836-5de9-bafd-4f99", "hidden": false, "targetId": "3a4c-6306-1978-27ca", "type": "profile"},
               {"name": "Elite", "id": "d184-d4d1-f2fc-619d", "hidden": false, "targetId": "eb66-6f5d-b1cf-d1bb", "type": "profile"},
-              {"name": "Gas Granade Launcher", "id": "774f-4b4d-23c2-87a4", "hidden": false, "targetId": "e297-46f6-804c-8f71", "type": "profile"}
+              {"name": "Gas Grenade Launcher", "id": "774f-4b4d-23c2-87a4", "hidden": false, "targetId": "e297-46f6-804c-8f71", "type": "profile"}
             ],
             "profiles": [
               {
@@ -1096,7 +1089,7 @@
               {"id": "c232-7d6f-a635-d748", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 4}
             ],
             "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 12}],
-            "infoLinks": [{"name": "Rifile", "id": "6c20-ce3b-12da-e94a", "exportable": false, "hidden": false, "targetId": "ba15-c9a9-076e-b8b8", "type": "profile"}],
+            "infoLinks": [{"name": "Rifle", "id": "6c20-ce3b-12da-e94a", "exportable": false, "hidden": false, "targetId": "ba15-c9a9-076e-b8b8", "type": "profile"}],
             "profiles": [
               {
                 "name": "MTF Infantryman",
@@ -1172,7 +1165,7 @@
             ],
             "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 14}],
             "infoLinks": [
-              {"name": "Rifile", "id": "ea14-0ccf-0044-6541", "exportable": false, "hidden": false, "targetId": "ba15-c9a9-076e-b8b8", "type": "profile"},
+              {"name": "Rifle", "id": "ea14-0ccf-0044-6541", "exportable": false, "hidden": false, "targetId": "ba15-c9a9-076e-b8b8", "type": "profile"},
               {"name": "Veteran", "id": "dbf6-8cec-a761-4d37", "hidden": false, "targetId": "e2ee-ccb3-270f-e3d7", "type": "profile"},
               {"name": "Elite", "id": "2e35-c754-b6a3-81cb", "hidden": false, "targetId": "eb66-6f5d-b1cf-d1bb", "type": "profile"}
             ],
@@ -1224,7 +1217,7 @@
             ],
             "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 26}],
             "infoLinks": [
-              {"name": "Rifile", "id": "4725-a4e1-a0c6-e58c", "hidden": false, "targetId": "ba15-c9a9-076e-b8b8", "type": "profile"},
+              {"name": "Rifle", "id": "4725-a4e1-a0c6-e58c", "hidden": false, "targetId": "ba15-c9a9-076e-b8b8", "type": "profile"},
               {"name": "Elite", "id": "7b4e-0499-f73f-98de", "hidden": false, "targetId": "eb66-6f5d-b1cf-d1bb", "type": "profile"},
               {"name": "Biowarfare Specialist", "id": "6e9a-a4b8-61d8-5e49", "hidden": false, "targetId": "3a4c-6306-1978-27ca", "type": "profile"},
               {"name": "Veteran", "id": "719b-20eb-5db9-e67e", "hidden": false, "targetId": "e2ee-ccb3-270f-e3d7", "type": "profile"}

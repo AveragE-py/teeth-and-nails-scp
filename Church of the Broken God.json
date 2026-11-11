@@ -1,0 +1,1030 @@
+{
+  "catalogue": {
+    "name": "Church of the Broken God",
+    "id": "5e9a-d4c4-4770-4e49",
+    "battleScribeVersion": "2.03",
+    "gameSystemId": "sys-352a-7a4d-9d8b-ffc1",
+    "gameSystemRevision": 1,
+    "library": false,
+    "revision": 3,
+    "type": "catalogue",
+    "categoryEntries": [
+      {"name": "Maxwellist Units", "id": "e347-b440-bc8a-6eb8", "hidden": false},
+      {
+        "name": "Maxwellist Tech-Modules",
+        "id": "a01f-cbc6-725e-31da",
+        "hidden": false,
+        "constraints": [
+          {"id": "6d58-5914-a132-0904-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
+          {"id": "6d58-5914-a132-0904-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
+        ]
+      },
+      {"name": "Orthodox Units", "id": "6b85-4bee-d003-1131", "hidden": false}
+    ],
+    "entryLinks": [
+      {"name": "The Scrappers", "id": "516f-ae9a-6468-574a", "hidden": false, "import": true, "targetId": "5d5f-4193-4040-d093", "type": "selectionEntry"},
+      {
+        "name": "Extended Components Reliability ",
+        "id": "e91d-3103-1b25-28d3",
+        "hidden": false,
+        "import": true,
+        "targetId": "ad31-34c5-a42e-7f5a",
+        "type": "selectionEntry"
+      },
+      {"name": "Extended Mobility Module", "id": "6700-1cbb-8501-4e36", "hidden": false, "import": true, "targetId": "a407-96e4-c26a-777e", "type": "selectionEntry"},
+      {
+        "name": "Extended Networking Module",
+        "id": "0a82-ffa8-290a-aab9",
+        "hidden": false,
+        "import": true,
+        "targetId": "e5b6-86f2-6031-a1ee",
+        "type": "selectionEntry"
+      },
+      {"name": "Extended Tactical Module", "id": "5ae9-e132-07d8-eef5", "hidden": false, "import": true, "targetId": "126e-6f58-e6a5-e824", "type": "selectionEntry"},
+      {"name": "The Lower Lords", "id": "a479-c952-49f9-9083", "hidden": false, "import": true, "targetId": "c541-23ac-488a-cb8a", "type": "selectionEntry"},
+      {"name": "The High Lord", "id": "e8da-c1aa-9008-e01d", "hidden": false, "import": true, "targetId": "5770-ac13-214f-3da9", "type": "selectionEntry"},
+      {"name": "The Networked Ones", "id": "eaaf-cef2-26e9-ee96", "hidden": false, "import": true, "targetId": "1182-b5f9-8b42-bc67", "type": "selectionEntry"},
+      {"name": "Veteran Networked Ones", "id": "9fae-0615-107f-4443", "hidden": false, "import": true, "targetId": "9cde-cd4b-245f-6b8a", "type": "selectionEntry"},
+      {"name": "Followers of WAN", "id": "a2c9-bb1e-3baa-1c8f", "hidden": false, "import": true, "targetId": "7037-802c-bfdb-d943", "type": "selectionEntry"},
+      {"name": "Tickers Squad", "id": "b96e-9568-cf75-9ed0", "hidden": false, "import": true, "targetId": "145d-ad4e-690c-8efb", "type": "selectionEntry"},
+      {"name": "The Cogwork Swarm", "id": "a702-a603-1f44-6e82", "hidden": false, "import": true, "targetId": "2b2e-d2d4-a2ab-f6e3", "type": "selectionEntry"},
+      {"name": "The Cogwork Thruth-Seeker", "id": "cfca-17f0-796c-938b", "hidden": false, "import": true, "targetId": "20dc-52bf-7199-db5f", "type": "selectionEntry"},
+      {"name": "The Cogwork Knights", "id": "702f-432f-490c-23df", "hidden": false, "import": true, "targetId": "5ffa-319c-ba81-0420", "type": "selectionEntry"},
+      {"name": "The Cogwork Priest", "id": "22cc-5a38-148e-e250", "hidden": false, "import": true, "targetId": "d6d2-74ea-d35e-df74", "type": "selectionEntry"}
+    ],
+    "forceEntries": [
+      {
+        "name": "Church of Maxwellism Force",
+        "id": "77b8-f0b4-5a64-77f4",
+        "hidden": false,
+        "categoryLinks": [
+          {"name": "Maxwellist Tech-Modules", "id": "47f7-f869-7441-2bae", "hidden": false, "targetId": "a01f-cbc6-725e-31da"},
+          {"name": "Maxwellist Units", "id": "0272-65e5-1a65-a8ed", "hidden": false, "targetId": "e347-b440-bc8a-6eb8"}
+        ]
+      },
+      {
+        "name": "The Orthodox Church Force",
+        "id": "0c04-d8a0-b011-94b6",
+        "hidden": false,
+        "categoryLinks": [{"name": "Orthodox Units", "id": "e930-b358-798f-fb79", "hidden": false, "targetId": "6b85-4bee-d003-1131"}]
+      }
+    ],
+    "sharedProfiles": [
+      {
+        "name": "Ranged Weaponry",
+        "id": "2b33-04ed-1400-81b5",
+        "hidden": false,
+        "typeId": "2a97-745a-d6ae-3fad",
+        "typeName": "Weapon",
+        "characteristics": [
+          {"name": "Range", "$text": "16", "typeId": "28ac-0754-369d-5aa6"},
+          {"name": "Strength", "$text": "1", "typeId": "c873-8ead-8fa4-1107"},
+          {"name": "Inaccuracy", "$text": "3", "typeId": "236d-de8a-045b-a916"},
+          {"name": "Lethality", "$text": "2", "typeId": "b12a-510f-75b3-fb88"}
+        ]
+      },
+      {
+        "name": "Melee Weaponry",
+        "id": "7ed3-9c00-1006-db49",
+        "hidden": false,
+        "typeId": "2a97-745a-d6ae-3fad",
+        "typeName": "Weapon",
+        "characteristics": [
+          {"name": "Range", "$text": "-", "typeId": "28ac-0754-369d-5aa6"},
+          {"name": "Strength", "$text": "-", "typeId": "c873-8ead-8fa4-1107"},
+          {"name": "Inaccuracy", "$text": "-", "typeId": "236d-de8a-045b-a916"},
+          {"name": "Lethality", "$text": "2", "typeId": "b12a-510f-75b3-fb88"}
+        ]
+      },
+      {
+        "name": "Complex Ranged Weaponry",
+        "id": "cf84-925d-1e16-3e01",
+        "hidden": false,
+        "typeId": "2a97-745a-d6ae-3fad",
+        "typeName": "Weapon",
+        "characteristics": [
+          {"name": "Range", "$text": "18", "typeId": "28ac-0754-369d-5aa6"},
+          {"name": "Strength", "$text": "1", "typeId": "c873-8ead-8fa4-1107"},
+          {"name": "Inaccuracy", "$text": "4", "typeId": "236d-de8a-045b-a916"},
+          {"name": "Lethality", "$text": "3", "typeId": "b12a-510f-75b3-fb88"}
+        ]
+      },
+      {
+        "name": "Multi-Shot Ranged Weaponry",
+        "id": "0f60-5b1d-580f-c9eb",
+        "hidden": false,
+        "typeId": "2a97-745a-d6ae-3fad",
+        "typeName": "Weapon",
+        "characteristics": [
+          {"name": "Range", "$text": "18", "typeId": "28ac-0754-369d-5aa6"},
+          {"name": "Strength", "$text": "4", "typeId": "c873-8ead-8fa4-1107"},
+          {"name": "Inaccuracy", "$text": "5", "typeId": "236d-de8a-045b-a916"},
+          {"name": "Lethality", "$text": "1", "typeId": "b12a-510f-75b3-fb88"}
+        ]
+      },
+      {
+        "name": "Anti-Tank Ranged Weaponry",
+        "id": "f23a-783c-532f-a4fc",
+        "hidden": false,
+        "typeId": "2a97-745a-d6ae-3fad",
+        "typeName": "Weapon",
+        "characteristics": [
+          {"name": "Range", "$text": "24", "typeId": "28ac-0754-369d-5aa6"},
+          {"name": "Strength", "$text": "1", "typeId": "c873-8ead-8fa4-1107"},
+          {"name": "Inaccuracy", "$text": "3", "typeId": "236d-de8a-045b-a916"},
+          {"name": "Lethality", "$text": "4 + Armor Piercing", "typeId": "b12a-510f-75b3-fb88"}
+        ]
+      },
+      {
+        "name": "Armor Piercing",
+        "id": "ecd5-feb6-07b9-bbc1",
+        "hidden": false,
+        "typeId": "425f-28ce-00a4-b4fa",
+        "typeName": "Special Rule",
+        "characteristics": [{"name": "Rule", "$text": "This weapon is able to deal damage to units with Vehicle and Super-Heavy rules.", "typeId": "89ed-d006-3f84-1055"}]
+      },
+      {
+        "name": "Elite",
+        "id": "7561-1f21-7fb1-ede3",
+        "hidden": false,
+        "typeId": "425f-28ce-00a4-b4fa",
+        "typeName": "Special Rule",
+        "characteristics": [
+          {
+            "name": "Rule",
+            "$text": "This unit can reroll any test once a round. you cannot reroll a test that was already rerolled using this rule.",
+            "typeId": "89ed-d006-3f84-1055"
+          }
+        ]
+      },
+      {
+        "name": "Flamethrower",
+        "id": "67d7-f073-90a9-626b",
+        "hidden": false,
+        "typeId": "425f-28ce-00a4-b4fa",
+        "typeName": "Special Rule",
+        "characteristics": [
+          {
+            "name": "Rule",
+            "$text": "This weapon gains +3 Lethality if the target is closer to the shooter than 6 inches. The distance is measured from any model having a weapon with Flamethrower rule.",
+            "typeId": "89ed-d006-3f84-1055"
+          }
+        ]
+      },
+      {
+        "name": "Heavy Armor",
+        "id": "2a12-0c8d-89e0-1a10",
+        "hidden": false,
+        "typeId": "425f-28ce-00a4-b4fa",
+        "typeName": "Special Rule",
+        "characteristics": [{"name": "Rule", "$text": "This unit can auto-success one ranged damage test per every attack targeted at this unit.", "typeId": "89ed-d006-3f84-1055"}]
+      },
+      {
+        "name": "Superior Firepower",
+        "id": "b744-7619-df75-1eed",
+        "hidden": false,
+        "typeId": "425f-28ce-00a4-b4fa",
+        "typeName": "Special Rule",
+        "characteristics": [
+          {
+            "name": "Rule",
+            "$text": "If you deal any damage to the target during shooting, this target gains Shaken modifier for the next round.",
+            "typeId": "89ed-d006-3f84-1055"
+          }
+        ]
+      },
+      {
+        "name": "Suppressing Fire",
+        "id": "892a-260a-5185-10e4",
+        "hidden": false,
+        "typeId": "425f-28ce-00a4-b4fa",
+        "typeName": "Special Rule",
+        "characteristics": [
+          {
+            "name": "Rule",
+            "$text": "If you fail to deal any damage to the target during shooting, roll additional d10 (the suppresion test), if you manage to get result +6, target unit looses its ability to shoot this round.",
+            "typeId": "89ed-d006-3f84-1055"
+          }
+        ]
+      },
+      {
+        "name": "Vehicle",
+        "id": "d65d-d456-082d-465f",
+        "hidden": false,
+        "typeId": "425f-28ce-00a4-b4fa",
+        "typeName": "Special Rule",
+        "characteristics": [
+          {
+            "name": "Rule",
+            "$text": "this unit cannot be a target of charge, this unit cannot charge, this unit cannot melee, this unit gains Mobile modifier if it did not shoot in the previous round (and loses the Mobile modifier when shoots), this unit cannot be designated as target by ranged attack if the attacker’s weapon does not have the Armor Piercing Special Rule.",
+            "typeId": "89ed-d006-3f84-1055"
+          }
+        ]
+      },
+      {
+        "name": "Veteran",
+        "id": "277e-91d6-1d53-1146",
+        "hidden": false,
+        "typeId": "425f-28ce-00a4-b4fa",
+        "typeName": "Special Rule",
+        "characteristics": [{"name": "Rule", "$text": "When performing a Shooting Test, this unit may reroll the result once.", "typeId": "89ed-d006-3f84-1055"}]
+      },
+      {
+        "name": "Mobile",
+        "id": "55e2-4a74-dd5c-3178",
+        "hidden": false,
+        "typeId": "6a3b-e563-3f13-6a87",
+        "typeName": "Modifier",
+        "characteristics": [{"name": "Target", "$text": "Movement", "typeId": "b9d8-48dd-f4fe-dec4"}, {"name": "Value", "$text": "+3", "typeId": "efe0-e51b-5a6f-c8da"}]
+      },
+      {
+        "name": "Shaken",
+        "id": "912b-9018-390d-4575",
+        "hidden": false,
+        "typeId": "6a3b-e563-3f13-6a87",
+        "typeName": "Modifier",
+        "characteristics": [{"name": "Target", "$text": "Training", "typeId": "b9d8-48dd-f4fe-dec4"}, {"name": "Value", "$text": "+2", "typeId": "efe0-e51b-5a6f-c8da"}]
+      },
+      {
+        "name": "Suffering",
+        "id": "82b6-8fa6-7a95-667e",
+        "hidden": false,
+        "typeId": "6a3b-e563-3f13-6a87",
+        "typeName": "Modifier",
+        "characteristics": [{"name": "Target", "$text": "Toughness", "typeId": "b9d8-48dd-f4fe-dec4"}, {"name": "Value", "$text": "-1", "typeId": "efe0-e51b-5a6f-c8da"}]
+      },
+      {
+        "name": "Precise Fire",
+        "id": "d2c4-b6b2-40bd-4a16",
+        "hidden": false,
+        "typeId": "6a3b-e563-3f13-6a87",
+        "typeName": "Modifier",
+        "characteristics": [{"name": "Target", "$text": "Inaccuracy", "typeId": "b9d8-48dd-f4fe-dec4"}, {"name": "Value", "$text": "-1", "typeId": "efe0-e51b-5a6f-c8da"}]
+      },
+      {
+        "name": "Reliable Parts",
+        "id": "3ce0-e6bc-9c35-5ad6",
+        "hidden": false,
+        "typeId": "6a3b-e563-3f13-6a87",
+        "typeName": "Modifier",
+        "characteristics": [{"name": "Target", "$text": "Health", "typeId": "b9d8-48dd-f4fe-dec4"}, {"name": "Value", "$text": "+1", "typeId": "efe0-e51b-5a6f-c8da"}]
+      },
+      {
+        "name": "Heavy Assault Gun",
+        "id": "6747-e9e6-dbde-8766",
+        "hidden": false,
+        "typeId": "2a97-745a-d6ae-3fad",
+        "typeName": "Weapon",
+        "characteristics": [
+          {"name": "Range", "$text": "18", "typeId": "28ac-0754-369d-5aa6"},
+          {"name": "Strength", "$text": "4", "typeId": "c873-8ead-8fa4-1107"},
+          {"name": "Inaccuracy", "$text": "4", "typeId": "236d-de8a-045b-a916"},
+          {"name": "Lethality", "$text": "2 + Armor Piercing", "typeId": "b12a-510f-75b3-fb88"}
+        ]
+      },
+      {
+        "name": "Cogwork-Based Ranged Weaponry",
+        "id": "64c2-e6f5-d792-85be",
+        "hidden": false,
+        "typeId": "2a97-745a-d6ae-3fad",
+        "typeName": "Weapon",
+        "characteristics": [
+          {"name": "Range", "$text": "18", "typeId": "28ac-0754-369d-5aa6"},
+          {"name": "Strength", "$text": "2", "typeId": "c873-8ead-8fa4-1107"},
+          {"name": "Inaccuracy", "$text": "3", "typeId": "236d-de8a-045b-a916"},
+          {"name": "Lethality", "$text": "2", "typeId": "b12a-510f-75b3-fb88"}
+        ]
+      },
+      {
+        "name": "Cogwork-Based Complex Ranged Weaponry",
+        "id": "343e-f87e-4dbf-4cb8",
+        "hidden": false,
+        "typeId": "2a97-745a-d6ae-3fad",
+        "typeName": "Weapon",
+        "characteristics": [
+          {"name": "Range", "$text": "20", "typeId": "28ac-0754-369d-5aa6"},
+          {"name": "Strength", "$text": "2", "typeId": "c873-8ead-8fa4-1107"},
+          {"name": "Inaccuracy", "$text": "3", "typeId": "236d-de8a-045b-a916"},
+          {"name": "Lethality", "$text": "3", "typeId": "b12a-510f-75b3-fb88"}
+        ]
+      },
+      {
+        "name": "Cogwork Priest",
+        "id": "00f3-33fb-9dda-2448",
+        "hidden": false,
+        "typeId": "425f-28ce-00a4-b4fa",
+        "typeName": "Special Rule",
+        "characteristics": [
+          {
+            "name": "Rule",
+            "$text": "This unit can use it's shooting phase action to remove two points of damage from any friendly unit within the range of 8 inches. there can be no terrain between this unit and unit you want to \"heal\".",
+            "typeId": "89ed-d006-3f84-1055"
+          }
+        ]
+      },
+      {
+        "name": "Cogwork-Based Heavy Hand Cannon",
+        "id": "9b83-26d9-0f32-293c",
+        "hidden": false,
+        "typeId": "2a97-745a-d6ae-3fad",
+        "typeName": "Weapon",
+        "characteristics": [
+          {"name": "Range", "$text": "32", "typeId": "28ac-0754-369d-5aa6"},
+          {"name": "Strength", "$text": "4", "typeId": "c873-8ead-8fa4-1107"},
+          {"name": "Inaccuracy", "$text": "4", "typeId": "236d-de8a-045b-a916"},
+          {"name": "Lethality", "$text": "2 + Armor Piercing", "typeId": "b12a-510f-75b3-fb88"}
+        ]
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "The Scrappers",
+        "id": "5d5f-4193-4040-d093",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "Maxwellist Units", "id": "5aad-72d4-3cd1-d57e", "hidden": false, "primary": true, "targetId": "e347-b440-bc8a-6eb8"}],
+        "constraints": [{"id": "78e5-85cc-fb9c-9e98", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}],
+        "profiles": [
+          {
+            "name": "The Scrappers",
+            "id": "88a4-bdc2-51f1-9076",
+            "hidden": false,
+            "typeId": "e269-6310-f011-664b",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "Movement", "$text": "10", "typeId": "ee4a-0f1f-8ed4-7b2c"},
+              {"name": "Toughness", "$text": "6", "typeId": "c3d5-3b5a-5ab5-ddbc"},
+              {"name": "Training", "$text": "8", "typeId": "d274-5c92-388d-8ee3"},
+              {"name": "Keywords", "$text": "", "typeId": "bbd4-4d1d-663b-bcb2"}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Scrapper w/Anti-Tank Weaponry",
+            "id": "6433-7cbd-9967-51eb",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "17c7-7439-3d76-87e4", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
+              {"id": "45e7-f2f9-3650-c7b5", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 6}
+            ],
+            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 12}],
+            "infoLinks": [
+              {"name": "Anti-Tank Ranged Weaponry", "id": "7c04-579f-5078-f1a9", "hidden": false, "targetId": "f23a-783c-532f-a4fc", "type": "profile"},
+              {"name": "Heavy Armor", "id": "4efa-ac29-6cc0-72f8", "hidden": false, "targetId": "2a12-0c8d-89e0-1a10", "type": "profile"},
+              {"name": "Armor Piercing", "id": "cf55-90d9-d18d-5e66", "hidden": false, "targetId": "ecd5-feb6-07b9-bbc1", "type": "profile"}
+            ],
+            "profiles": [
+              {
+                "name": "Scrapper",
+                "id": "10da-09c2-6d2a-901a",
+                "hidden": false,
+                "typeId": "5d09-2cae-5242-4166",
+                "typeName": "Model",
+                "characteristics": [{"name": "Health", "$text": "3", "typeId": "0eed-bd85-b04c-a60a"}, {"name": "Size", "$text": "25 mm (base) 28 mm (height)", "typeId": "5261-108b-c0a2-b396"}]
+              }
+            ]
+          },
+          {
+            "name": "Scrapper w/Heavy Assault Gun",
+            "id": "e704-f210-e762-b5b9",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "ae9b-fb13-bb66-121c", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
+              {"id": "b4bd-fb10-d6ac-6547", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 4}
+            ],
+            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 18}],
+            "infoLinks": [
+              {"name": "Heavy Assault Gun", "id": "c581-9bf6-e35d-b9e7", "hidden": false, "targetId": "6747-e9e6-dbde-8766", "type": "profile"},
+              {"name": "Armor Piercing", "id": "0809-44a7-2dd5-4ae3", "hidden": false, "targetId": "ecd5-feb6-07b9-bbc1", "type": "profile"},
+              {"name": "Heavy Armor", "id": "96d1-9124-e64b-9710", "hidden": false, "targetId": "2a12-0c8d-89e0-1a10", "type": "profile"}
+            ],
+            "profiles": [
+              {
+                "name": "Scrapper",
+                "id": "eb25-5559-15ec-6c87",
+                "hidden": false,
+                "typeId": "5d09-2cae-5242-4166",
+                "typeName": "Model",
+                "characteristics": [{"name": "Health", "$text": "4", "typeId": "0eed-bd85-b04c-a60a"}, {"name": "Size", "$text": "25 mm (base) 28 mm (height)", "typeId": "5261-108b-c0a2-b396"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "The Networked Ones",
+        "id": "1182-b5f9-8b42-bc67",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "Maxwellist Units", "id": "3778-d806-ae30-b1c1", "hidden": false, "primary": true, "targetId": "e347-b440-bc8a-6eb8"}],
+        "constraints": [{"id": "0800-0cec-3ffa-051c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}],
+        "profiles": [
+          {
+            "name": "The Networked Ones",
+            "id": "e852-cf7d-3ef1-ea6d",
+            "hidden": false,
+            "typeId": "e269-6310-f011-664b",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "Movement", "$text": "10", "typeId": "ee4a-0f1f-8ed4-7b2c"},
+              {"name": "Toughness", "$text": "5", "typeId": "c3d5-3b5a-5ab5-ddbc"},
+              {"name": "Training", "$text": "6", "typeId": "d274-5c92-388d-8ee3"},
+              {"name": "Keywords", "$text": "", "typeId": "bbd4-4d1d-663b-bcb2"}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Networked",
+            "id": "6008-dbe1-c73e-e7ef",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "575d-ba01-34b9-72de", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 4},
+              {"id": "7ef5-685c-e016-117f", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 6}
+            ],
+            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 14}],
+            "infoLinks": [
+              {"name": "Melee Weaponry", "id": "77a7-17bc-0688-0746", "hidden": false, "targetId": "7ed3-9c00-1006-db49", "type": "profile"},
+              {"name": "Complex Ranged Weaponry", "id": "b72e-a199-bdbd-7f9d", "hidden": false, "targetId": "cf84-925d-1e16-3e01", "type": "profile"}
+            ],
+            "profiles": [
+              {
+                "name": "Networked",
+                "id": "3d27-3852-6955-5fe1",
+                "hidden": false,
+                "typeId": "5d09-2cae-5242-4166",
+                "typeName": "Model",
+                "characteristics": [{"name": "Health", "$text": "4", "typeId": "0eed-bd85-b04c-a60a"}, {"name": "Size", "$text": "25 mm (base) 28 mm (height)", "typeId": "5261-108b-c0a2-b396"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "The Lower Lords",
+        "id": "c541-23ac-488a-cb8a",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "Maxwellist Units", "id": "2263-c235-fe0b-9a84", "hidden": false, "primary": true, "targetId": "e347-b440-bc8a-6eb8"}],
+        "constraints": [{"id": "de61-9000-4eb4-b5f1", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}],
+        "profiles": [
+          {
+            "name": "The Lower Lords",
+            "id": "72f8-415e-76d4-a2a5",
+            "hidden": false,
+            "typeId": "e269-6310-f011-664b",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "Movement", "$text": "8", "typeId": "ee4a-0f1f-8ed4-7b2c"},
+              {"name": "Toughness", "$text": "5", "typeId": "c3d5-3b5a-5ab5-ddbc"},
+              {"name": "Training", "$text": "6", "typeId": "d274-5c92-388d-8ee3"},
+              {"name": "Keywords", "$text": "", "typeId": "bbd4-4d1d-663b-bcb2"}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Lower Lord",
+            "id": "e3fe-a4e8-14e8-a553",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "e853-7e33-5c90-4edc", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
+              {"id": "192c-9e36-e547-200c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 5}
+            ],
+            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 20}],
+            "infoLinks": [
+              {"name": "Melee Weaponry", "id": "d530-f670-d5db-7fa2", "hidden": false, "targetId": "7ed3-9c00-1006-db49", "type": "profile"},
+              {"name": "Complex Ranged Weaponry", "id": "0306-8e5b-cab3-4e49", "hidden": false, "targetId": "cf84-925d-1e16-3e01", "type": "profile"},
+              {"name": "Elite", "id": "b28d-3421-ff87-d978", "hidden": false, "targetId": "7561-1f21-7fb1-ede3", "type": "profile"}
+            ],
+            "profiles": [
+              {
+                "name": "Lower Lord",
+                "id": "1ff4-b0ca-06f9-c070",
+                "hidden": false,
+                "typeId": "5d09-2cae-5242-4166",
+                "typeName": "Model",
+                "characteristics": [{"name": "Health", "$text": "4", "typeId": "0eed-bd85-b04c-a60a"}, {"name": "Size", "$text": "32 mm (base) 40 mm (height)", "typeId": "5261-108b-c0a2-b396"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "The High Lord",
+        "id": "5770-ac13-214f-3da9",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "Maxwellist Units", "id": "2365-5473-d9d8-0987", "hidden": false, "primary": true, "targetId": "e347-b440-bc8a-6eb8"}],
+        "profiles": [
+          {
+            "name": "The High Lord",
+            "id": "5e35-07e1-576d-5fb0",
+            "hidden": false,
+            "typeId": "e269-6310-f011-664b",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "Movement", "$text": "14", "typeId": "ee4a-0f1f-8ed4-7b2c"},
+              {"name": "Toughness", "$text": "5", "typeId": "c3d5-3b5a-5ab5-ddbc"},
+              {"name": "Training", "$text": "4", "typeId": "d274-5c92-388d-8ee3"},
+              {"name": "Keywords", "$text": "", "typeId": "bbd4-4d1d-663b-bcb2"}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "The High Lord",
+            "id": "24bc-dcd3-3242-fa82",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "d2d3-ef00-c6f0-2a53-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "d2d3-ef00-c6f0-2a53-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 32}],
+            "infoLinks": [
+              {"name": "Melee Weaponry", "id": "9efa-057a-e721-39a9", "hidden": false, "targetId": "7ed3-9c00-1006-db49", "type": "profile"},
+              {"name": "Multi-Shot Ranged Weaponry", "id": "a4d4-5bc0-ad5c-ac16", "hidden": false, "targetId": "0f60-5b1d-580f-c9eb", "type": "profile"},
+              {"name": "Elite", "id": "3cf3-66d7-ead1-e022", "hidden": false, "targetId": "7561-1f21-7fb1-ede3", "type": "profile"},
+              {"name": "Heavy Armor", "id": "313d-8770-c1fc-d6c8", "hidden": false, "targetId": "2a12-0c8d-89e0-1a10", "type": "profile"}
+            ],
+            "profiles": [
+              {
+                "name": "Lower Lord",
+                "id": "55ee-8284-db9d-739e",
+                "hidden": false,
+                "typeId": "5d09-2cae-5242-4166",
+                "typeName": "Model",
+                "characteristics": [{"name": "Health", "$text": "4", "typeId": "0eed-bd85-b04c-a60a"}, {"name": "Size", "$text": "32 mm (base) 40 mm (height)", "typeId": "5261-108b-c0a2-b396"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Extended Networking Module",
+        "id": "e5b6-86f2-6031-a1ee",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Maxwellist Tech-Modules", "id": "677a-de70-b2b2-3569", "hidden": false, "primary": true, "targetId": "a01f-cbc6-725e-31da"}],
+        "constraints": [{"id": "7dee-6e92-7c77-e634", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 50}],
+        "profiles": [
+          {
+            "name": "Extended Networking Module",
+            "id": "4bd6-ef90-08f6-0c80",
+            "hidden": false,
+            "typeId": "425f-28ce-00a4-b4fa",
+            "typeName": "Special Rule",
+            "characteristics": [
+              {
+                "name": "Rule",
+                "$text": "Once a round, during movement, you can move already moved unit again, at the cost of loosing option to move one other unit that was not already moved.",
+                "typeId": "89ed-d006-3f84-1055"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Extended Tactical Module",
+        "id": "126e-6f58-e6a5-e824",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Maxwellist Tech-Modules", "id": "1276-2070-8f2f-0780", "hidden": false, "primary": true, "targetId": "a01f-cbc6-725e-31da"}],
+        "constraints": [{"id": "3ecb-aee8-df78-dc4c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 50}],
+        "infoLinks": [{"name": "Precise Fire", "id": "35e2-1ed9-fddb-210f", "hidden": false, "targetId": "d2c4-b6b2-40bd-4a16", "type": "profile"}],
+        "profiles": [
+          {
+            "name": "Extended Tactical Module",
+            "id": "a1f8-a345-e6a7-2dcc",
+            "hidden": false,
+            "typeId": "425f-28ce-00a4-b4fa",
+            "typeName": "Special Rule",
+            "characteristics": [{"name": "Rule", "$text": "Every unit in this army gains Precise Fire modifier", "typeId": "89ed-d006-3f84-1055"}]
+          }
+        ]
+      },
+      {
+        "name": "Extended Mobility Module",
+        "id": "a407-96e4-c26a-777e",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Maxwellist Tech-Modules", "id": "1579-caf4-5586-7717", "hidden": false, "primary": true, "targetId": "a01f-cbc6-725e-31da"}],
+        "constraints": [{"id": "f60a-b261-92a7-fdf3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 60}],
+        "infoLinks": [{"name": "Mobile", "id": "30cb-0620-1eac-38c9", "hidden": false, "targetId": "55e2-4a74-dd5c-3178", "type": "profile"}],
+        "profiles": [
+          {
+            "name": "Extended Mobility Module",
+            "id": "719d-61b6-4406-5d7d",
+            "hidden": false,
+            "typeId": "425f-28ce-00a4-b4fa",
+            "typeName": "Special Rule",
+            "characteristics": [{"name": "Rule", "$text": "Every unit in this army gains Mobile modifier", "typeId": "89ed-d006-3f84-1055"}]
+          }
+        ]
+      },
+      {
+        "name": "Extended Components Reliability ",
+        "id": "ad31-34c5-a42e-7f5a",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Maxwellist Tech-Modules", "id": "d43d-435d-046c-9824", "hidden": false, "primary": true, "targetId": "a01f-cbc6-725e-31da"}],
+        "constraints": [{"id": "e066-642d-cb3c-1d09", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 60}],
+        "infoLinks": [{"name": "Reliable Parts", "id": "94d6-38a8-bd6a-fed1", "hidden": false, "targetId": "3ce0-e6bc-9c35-5ad6", "type": "profile"}],
+        "profiles": [
+          {
+            "name": "Extended Components Reliability ",
+            "id": "2308-f44d-0b63-5a05",
+            "hidden": false,
+            "typeId": "425f-28ce-00a4-b4fa",
+            "typeName": "Special Rule",
+            "characteristics": [{"name": "Rule", "$text": "Every unit in this army gains Reliable Parts modifier.", "typeId": "89ed-d006-3f84-1055"}]
+          }
+        ]
+      },
+      {
+        "name": "Followers of WAN",
+        "id": "7037-802c-bfdb-d943",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "Maxwellist Units", "id": "fb1e-069e-813e-6681", "hidden": false, "primary": true, "targetId": "e347-b440-bc8a-6eb8"}],
+        "constraints": [{"id": "8ae5-6c17-279c-33db", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}],
+        "profiles": [
+          {
+            "name": "Followers of WAN",
+            "id": "bba7-ae54-1f56-be22",
+            "hidden": false,
+            "typeId": "e269-6310-f011-664b",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "Movement", "$text": "8", "typeId": "ee4a-0f1f-8ed4-7b2c"},
+              {"name": "Toughness", "$text": "7", "typeId": "c3d5-3b5a-5ab5-ddbc"},
+              {"name": "Training", "$text": "8", "typeId": "d274-5c92-388d-8ee3"},
+              {"name": "Keywords", "$text": "", "typeId": "bbd4-4d1d-663b-bcb2"}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Follower of WAN",
+            "id": "ce82-ca76-4640-35e4",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "02ab-7b2c-ccb8-bc7f", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 6},
+              {"id": "c34f-6174-37fb-f769", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 10}
+            ],
+            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 8}],
+            "infoLinks": [
+              {"name": "Melee Weaponry", "id": "491e-dff6-2993-0758", "hidden": false, "targetId": "7ed3-9c00-1006-db49", "type": "profile"},
+              {"name": "Ranged Weaponry", "id": "e3d3-affc-3ec5-90c4", "hidden": false, "targetId": "2b33-04ed-1400-81b5", "type": "profile"}
+            ],
+            "profiles": [
+              {
+                "name": "Follower of WAN",
+                "id": "7f07-ed67-db7b-091d",
+                "hidden": false,
+                "typeId": "5d09-2cae-5242-4166",
+                "typeName": "Model",
+                "characteristics": [{"name": "Health", "$text": "2", "typeId": "0eed-bd85-b04c-a60a"}, {"name": "Size", "$text": "25 mm (base) 28 mm (height)", "typeId": "5261-108b-c0a2-b396"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Veteran Networked Ones",
+        "id": "9cde-cd4b-245f-6b8a",
+        "hidden": false,
+        "import": false,
+        "type": "unit",
+        "categoryLinks": [{"name": "Maxwellist Units", "id": "1f2d-9dce-209c-2994", "hidden": false, "primary": true, "targetId": "e347-b440-bc8a-6eb8"}],
+        "constraints": [{"id": "9711-bc22-b884-f24d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}],
+        "profiles": [
+          {
+            "name": "Veteran Networked Ones",
+            "id": "0d15-578b-684e-04ec",
+            "hidden": false,
+            "typeId": "e269-6310-f011-664b",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "Movement", "$text": "12", "typeId": "ee4a-0f1f-8ed4-7b2c"},
+              {"name": "Toughness", "$text": "5", "typeId": "c3d5-3b5a-5ab5-ddbc"},
+              {"name": "Training", "$text": "4", "typeId": "d274-5c92-388d-8ee3"},
+              {"name": "Keywords", "$text": "", "typeId": "bbd4-4d1d-663b-bcb2"}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Veteran Networked",
+            "id": "97cc-a1b3-6893-2250",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "8107-8d6a-4a51-ae1b", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
+              {"id": "16e6-e743-72be-5a17", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 5}
+            ],
+            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 16}],
+            "infoLinks": [
+              {"name": "Melee Weaponry", "id": "a8ee-a12a-ceb8-70b9", "hidden": false, "targetId": "7ed3-9c00-1006-db49", "type": "profile"},
+              {"name": "Complex Ranged Weaponry", "id": "aed3-dc8d-1dfc-2c6d", "hidden": false, "targetId": "cf84-925d-1e16-3e01", "type": "profile"},
+              {"name": "Veteran", "id": "182c-f3ec-eaac-eab7", "hidden": false, "targetId": "277e-91d6-1d53-1146", "type": "profile"}
+            ],
+            "profiles": [
+              {
+                "name": "Veteran Networked",
+                "id": "1983-a5f3-1608-cdc3",
+                "hidden": false,
+                "typeId": "5d09-2cae-5242-4166",
+                "typeName": "Model",
+                "characteristics": [{"name": "Health", "$text": "5", "typeId": "0eed-bd85-b04c-a60a"}, {"name": "Size", "$text": "25 mm (base) 28 mm (height)", "typeId": "5261-108b-c0a2-b396"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "The Cogwork Culitsts",
+        "id": "145d-ad4e-690c-8efb",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "Orthodox Units", "id": "e01a-7254-d97a-2217", "hidden": false, "primary": true, "targetId": "6b85-4bee-d003-1131"}],
+        "constraints": [{"id": "efda-8d43-0c6b-28c7", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}],
+        "profiles": [
+          {
+            "name": "The Cogwork Culitsts",
+            "id": "6a89-138e-8fff-b5f9",
+            "hidden": false,
+            "typeId": "e269-6310-f011-664b",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "Movement", "$text": "10", "typeId": "ee4a-0f1f-8ed4-7b2c"},
+              {"name": "Toughness", "$text": "5", "typeId": "c3d5-3b5a-5ab5-ddbc"},
+              {"name": "Training", "$text": "7", "typeId": "d274-5c92-388d-8ee3"},
+              {"name": "Keywords", "$text": "", "typeId": "bbd4-4d1d-663b-bcb2"}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Ticker w/Full Equipment",
+            "id": "42dc-a8b4-b17e-203e",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "884e-2827-84fd-5508", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 3},
+              {"id": "fb3b-81ed-d598-ec83", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 8}
+            ],
+            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 14}],
+            "infoLinks": [
+              {"name": "Melee Weaponry", "id": "efd4-d108-fe3b-8af8", "hidden": false, "targetId": "7ed3-9c00-1006-db49", "type": "profile"},
+              {"name": "Cogwork-Based Ranged Weaponry", "id": "eab7-3962-0b08-b83d", "hidden": false, "targetId": "64c2-e6f5-d792-85be", "type": "profile"}
+            ],
+            "profiles": [
+              {
+                "name": "Ticker",
+                "id": "97a7-95f9-d341-c884",
+                "hidden": false,
+                "typeId": "5d09-2cae-5242-4166",
+                "typeName": "Model",
+                "characteristics": [{"name": "Health", "$text": "4", "typeId": "0eed-bd85-b04c-a60a"}, {"name": "Size", "$text": "25 mm (base) 28 mm (height)", "typeId": "5261-108b-c0a2-b396"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "The Cogwork Swarm",
+        "id": "2b2e-d2d4-a2ab-f6e3",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "Orthodox Units", "id": "fc56-e81c-404d-b2e6", "hidden": false, "primary": true, "targetId": "6b85-4bee-d003-1131"}],
+        "constraints": [{"id": "7547-10f3-ee8c-4e6f", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}],
+        "profiles": [
+          {
+            "name": "The Cogwork Swarm",
+            "id": "08cf-6449-5e4b-28f3",
+            "hidden": false,
+            "typeId": "e269-6310-f011-664b",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "Movement", "$text": "12", "typeId": "ee4a-0f1f-8ed4-7b2c"},
+              {"name": "Toughness", "$text": "8", "typeId": "c3d5-3b5a-5ab5-ddbc"},
+              {"name": "Training", "$text": "8", "typeId": "d274-5c92-388d-8ee3"},
+              {"name": "Keywords", "$text": "", "typeId": "bbd4-4d1d-663b-bcb2"}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Ticker w/Melee Weaponry",
+            "id": "5ae1-5610-3d7c-ac45",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "1c82-77db-a7d8-92d5", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 8},
+              {"id": "f5e5-9a03-99e0-8bc7", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 12}
+            ],
+            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 6}],
+            "infoLinks": [{"name": "Melee Weaponry", "id": "468c-1bcd-35df-2423", "hidden": false, "targetId": "7ed3-9c00-1006-db49", "type": "profile"}],
+            "profiles": [
+              {
+                "name": "Ticker",
+                "id": "4118-c103-8d4b-3af9",
+                "hidden": false,
+                "typeId": "5d09-2cae-5242-4166",
+                "typeName": "Model",
+                "characteristics": [{"name": "Health", "$text": "4", "typeId": "0eed-bd85-b04c-a60a"}, {"name": "Size", "$text": "25 mm (base) 28 mm (height)", "typeId": "5261-108b-c0a2-b396"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "The Cogwork Priest",
+        "id": "d6d2-74ea-d35e-df74",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "Orthodox Units", "id": "62d9-0a78-cffd-f879", "hidden": false, "primary": true, "targetId": "6b85-4bee-d003-1131"}],
+        "constraints": [{"id": "3d97-3a9d-f5cd-a28a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}],
+        "profiles": [
+          {
+            "name": "The Cogwork Priest",
+            "id": "5af9-988a-3990-6d3a",
+            "hidden": false,
+            "typeId": "e269-6310-f011-664b",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "Movement", "$text": "14", "typeId": "ee4a-0f1f-8ed4-7b2c"},
+              {"name": "Toughness", "$text": "7", "typeId": "c3d5-3b5a-5ab5-ddbc"},
+              {"name": "Training", "$text": "3", "typeId": "d274-5c92-388d-8ee3"},
+              {"name": "Keywords", "$text": "", "typeId": "bbd4-4d1d-663b-bcb2"}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Cogwork Priest",
+            "id": "c1e2-6e5c-4033-b72e",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "a986-8904-1de7-8b11-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "a986-8904-1de7-8b11-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 28}],
+            "infoLinks": [
+              {"name": "Melee Weaponry", "id": "7205-fe7d-5c9f-e5c4", "hidden": false, "targetId": "7ed3-9c00-1006-db49", "type": "profile"},
+              {"name": "Cogwork-Based Complex Ranged Weaponry", "id": "e5dc-62b8-c429-17eb", "hidden": false, "targetId": "343e-f87e-4dbf-4cb8", "type": "profile"},
+              {"name": "Elite", "id": "c8bf-f6dc-a70b-e986", "hidden": false, "targetId": "7561-1f21-7fb1-ede3", "type": "profile"},
+              {"name": "Cogwork Priest", "id": "a5d1-a551-fc7b-a6c0", "hidden": false, "targetId": "00f3-33fb-9dda-2448", "type": "profile"}
+            ],
+            "profiles": [
+              {
+                "name": "Cogwork Priest",
+                "id": "e8fc-f647-5db5-544f",
+                "hidden": false,
+                "typeId": "5d09-2cae-5242-4166",
+                "typeName": "Model",
+                "characteristics": [{"name": "Health", "$text": "7", "typeId": "0eed-bd85-b04c-a60a"}, {"name": "Size", "$text": "25 mm (base) 28 mm (height)", "typeId": "5261-108b-c0a2-b396"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "The Cogwork Thruth-Seeker",
+        "id": "20dc-52bf-7199-db5f",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "Orthodox Units", "id": "f728-755b-1d0d-7c03", "hidden": false, "primary": true, "targetId": "6b85-4bee-d003-1131"}],
+        "constraints": [{"id": "c96b-2f73-8400-2976", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}],
+        "profiles": [
+          {
+            "name": "The Cogwork Thruth-Seeker",
+            "id": "4066-0136-f9a3-7a6a",
+            "hidden": false,
+            "typeId": "e269-6310-f011-664b",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "Movement", "$text": "10", "typeId": "ee4a-0f1f-8ed4-7b2c"},
+              {"name": "Toughness", "$text": "5", "typeId": "c3d5-3b5a-5ab5-ddbc"},
+              {"name": "Training", "$text": "7", "typeId": "d274-5c92-388d-8ee3"},
+              {"name": "Keywords", "$text": "", "typeId": "bbd4-4d1d-663b-bcb2"}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Truth-Seeker",
+            "id": "a469-4d3b-c8fa-1595",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "317f-e499-dacc-6f53-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "317f-e499-dacc-6f53-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 32}],
+            "infoLinks": [{"name": "Cogwork-Based Heavy Hand Cannon", "id": "dffa-ae88-5f61-dd61", "hidden": false, "targetId": "9b83-26d9-0f32-293c", "type": "profile"}],
+            "profiles": [
+              {
+                "name": "Truth-Seeker",
+                "id": "031a-db17-e215-37e8",
+                "hidden": false,
+                "typeId": "5d09-2cae-5242-4166",
+                "typeName": "Model",
+                "characteristics": [{"name": "Health", "$text": "12", "typeId": "0eed-bd85-b04c-a60a"}, {"name": "Size", "$text": "50 mm (base) 75 mm (height)", "typeId": "5261-108b-c0a2-b396"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "The Cogwork Knights",
+        "id": "5ffa-319c-ba81-0420",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "Orthodox Units", "id": "76f7-cb7f-74d8-b0aa", "hidden": false, "primary": true, "targetId": "6b85-4bee-d003-1131"}],
+        "constraints": [{"id": "9b9c-ef2a-f955-f478", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}],
+        "profiles": [
+          {
+            "name": "The Cogwork Knights",
+            "id": "54de-8826-5b46-dd4d",
+            "hidden": false,
+            "typeId": "e269-6310-f011-664b",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "Movement", "$text": "6", "typeId": "ee4a-0f1f-8ed4-7b2c"},
+              {"name": "Toughness", "$text": "3", "typeId": "c3d5-3b5a-5ab5-ddbc"},
+              {"name": "Training", "$text": "4", "typeId": "d274-5c92-388d-8ee3"},
+              {"name": "Keywords", "$text": "", "typeId": "bbd4-4d1d-663b-bcb2"}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Cogwork Knight",
+            "id": "4b3e-ab9f-cfe7-4612",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "4cb3-4d2c-0299-31a1", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
+              {"id": "83e8-cbf9-e19b-6853", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 5}
+            ],
+            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 20}],
+            "infoLinks": [
+              {"name": "Cogwork-Based Complex Ranged Weaponry", "id": "de57-0355-dd3e-8127", "hidden": false, "targetId": "343e-f87e-4dbf-4cb8", "type": "profile"},
+              {"name": "Elite", "id": "0dc5-f985-49b8-6b88", "hidden": false, "targetId": "7561-1f21-7fb1-ede3", "type": "profile"}
+            ],
+            "profiles": [
+              {
+                "name": "Cogwork Knight",
+                "id": "eecc-9a0e-23ab-0bf1",
+                "hidden": false,
+                "typeId": "5d09-2cae-5242-4166",
+                "typeName": "Model",
+                "characteristics": [{"name": "Health", "$text": "6", "typeId": "0eed-bd85-b04c-a60a"}, {"name": "Size", "$text": "32 mm (base) 40 mm (height)", "typeId": "5261-108b-c0a2-b396"}]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

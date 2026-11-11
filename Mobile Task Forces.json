@@ -212,7 +212,7 @@
         "characteristics": [
           {
             "name": "Rule",
-            "$text": "If you fail to deal any damage to the target during shooting, the target loses ability to perform shooting action this round.",
+            "$text": "If you fail to deal any damage to the target during shooting, roll additional d10 (the suppresion test), if you manage to get result +6, target unit looses its ability to shoot this round.",
             "typeId": "89ed-d006-3f84-1055"
           }
         ]
@@ -880,7 +880,7 @@
         ]
       },
       {
-        "name": "Assault Squad with Flamewthrowers",
+        "name": "Assault Squad with Flamethrowers",
         "id": "9b78-9dba-fbfe-2037",
         "hidden": false,
         "import": true,
@@ -967,7 +967,7 @@
               {"id": "1ae5-2963-ea7d-74fb", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
               {"id": "9f57-eda8-2917-00b5", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}
             ],
-            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 36}],
+            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 40}],
             "infoLinks": [
               {"name": "Biowarfare Specialist", "id": "7836-5de9-bafd-4f99", "hidden": false, "targetId": "3a4c-6306-1978-27ca", "type": "profile"},
               {"name": "Elite", "id": "d184-d4d1-f2fc-619d", "hidden": false, "targetId": "eb66-6f5d-b1cf-d1bb", "type": "profile"},

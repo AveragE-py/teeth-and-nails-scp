@@ -815,7 +815,7 @@
         "constraints": [{"id": "cf4b-d6ce-9156-fbc9", "field": "selections", "scope": "9ce8-baf7-935f-058b", "shared": true, "type": "max", "value": 3}],
         "profiles": [
           {
-            "name": "Assault Squad with Flamewthrowers",
+            "name": "Assault Squad with Gas Granade Launchers",
             "id": "2dc9-4db9-f062-639b",
             "hidden": false,
             "typeId": "e269-6310-f011-664b",

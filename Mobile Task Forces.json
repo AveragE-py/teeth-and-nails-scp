@@ -203,7 +203,7 @@
         "id": "e5c8-ab3c-7145-4452",
         "hidden": false,
         "import": true,
-        "type": "upgrade",
+        "type": "unit",
         "categoryLinks": [{"name": "Regular Units", "id": "ce2b-2770-a956-92f8", "hidden": false, "primary": true, "targetId": "9ce8-baf7-935f-058b"}],
         "constraints": [{"id": "610d-83e3-d116-f618", "field": "selections", "scope": "9ce8-baf7-935f-058b", "shared": true, "type": "max", "value": 3}],
         "profiles": [
@@ -279,7 +279,7 @@
         "id": "0d7a-f465-49dc-9035",
         "hidden": false,
         "import": true,
-        "type": "upgrade",
+        "type": "unit",
         "categoryLinks": [{"name": "Regular Units", "id": "4018-6715-27d8-1e0c", "hidden": false, "primary": true, "targetId": "9ce8-baf7-935f-058b"}],
         "constraints": [{"id": "6f00-a642-2350-eebb", "field": "selections", "scope": "9ce8-baf7-935f-058b", "shared": true, "type": "max", "value": 3}],
         "profiles": [
@@ -318,6 +318,105 @@
                 "typeId": "5d09-2cae-5242-4166",
                 "typeName": "Model",
                 "characteristics": [{"name": "Health", "$text": "3", "typeId": "0eed-bd85-b04c-a60a"}, {"name": "Size", "$text": "50 mm (base) 28 mm (height)", "typeId": "5261-108b-c0a2-b396"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lieutenant",
+        "id": "8f33-4f42-d89e-2d59",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "Commanders", "id": "b194-38e8-4076-5d4a", "hidden": false, "primary": true, "targetId": "e25e-c8c4-a359-8fc9"}],
+        "profiles": [
+          {
+            "name": "Lieutenant",
+            "id": "3e4b-1e6e-f56a-72ca",
+            "hidden": false,
+            "typeId": "e269-6310-f011-664b",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "Movement", "$text": "9", "typeId": "ee4a-0f1f-8ed4-7b2c"},
+              {"name": "Toughness", "$text": "5", "typeId": "c3d5-3b5a-5ab5-ddbc"},
+              {"name": "Training", "$text": "2", "typeId": "d274-5c92-388d-8ee3"},
+              {"name": "Keywords", "$text": "any specialization", "typeId": "bbd4-4d1d-663b-bcb2"}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Lieutenant",
+            "id": "3017-331a-00b2-9d04",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "d5e2-5684-35a3-b830-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "d5e2-5684-35a3-b830-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 24}],
+            "infoLinks": [
+              {"name": "Rifile", "id": "b99d-73c7-c17c-4677", "hidden": false, "targetId": "ba15-c9a9-076e-b8b8", "type": "profile"},
+              {"name": "Elite", "id": "e001-054c-bc95-af89", "hidden": false, "targetId": "eb66-6f5d-b1cf-d1bb", "type": "profile"}
+            ],
+            "profiles": [
+              {
+                "name": "Lieutenant",
+                "id": "6e28-1d4d-eec2-a3ea",
+                "hidden": false,
+                "typeId": "5d09-2cae-5242-4166",
+                "typeName": "Model",
+                "characteristics": [{"name": "Health", "$text": "4", "typeId": "0eed-bd85-b04c-a60a"}, {"name": "Size", "$text": "25 mm (base) 28 mm (height)", "typeId": "5261-108b-c0a2-b396"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sergeant",
+        "id": "ce94-bedc-9cc7-29ca",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "Commanders", "id": "14bd-fb5b-4f25-b162", "hidden": false, "primary": true, "targetId": "e25e-c8c4-a359-8fc9"}],
+        "profiles": [
+          {
+            "name": "Sergeant",
+            "id": "a3ad-fe92-0634-f6c7",
+            "hidden": false,
+            "typeId": "e269-6310-f011-664b",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "Movement", "$text": "9", "typeId": "ee4a-0f1f-8ed4-7b2c"},
+              {"name": "Toughness", "$text": "5", "typeId": "c3d5-3b5a-5ab5-ddbc"},
+              {"name": "Training", "$text": "3", "typeId": "d274-5c92-388d-8ee3"},
+              {"name": "Keywords", "$text": "any specialization", "typeId": "bbd4-4d1d-663b-bcb2"}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Sergeant",
+            "id": "fd34-18e7-b4eb-31ed",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "634d-6867-2bde-13e7-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "634d-6867-2bde-13e7-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 18}],
+            "infoLinks": [{"name": "Submachine Gun", "id": "33ed-0051-6ae3-e204", "hidden": false, "targetId": "ffeb-14f9-11db-d308", "type": "profile"}],
+            "profiles": [
+              {
+                "name": "Sergeant",
+                "id": "5135-7e9b-2c8e-376c",
+                "hidden": false,
+                "typeId": "5d09-2cae-5242-4166",
+                "typeName": "Model",
+                "characteristics": [{"name": "Health", "$text": "4", "typeId": "0eed-bd85-b04c-a60a"}, {"name": "Size", "$text": "25 mm (base) 28 mm (height)", "typeId": "5261-108b-c0a2-b396"}]
               }
             ]
           }

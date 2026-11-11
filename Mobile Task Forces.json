@@ -1,0 +1,121 @@
+{
+  "catalogue": {
+    "name": "Mobile Task Forces",
+    "id": "700f-7143-d4d0-73ff",
+    "battleScribeVersion": "2.03",
+    "gameSystemId": "sys-352a-7a4d-9d8b-ffc1",
+    "gameSystemRevision": 1,
+    "library": false,
+    "revision": 1,
+    "type": "catalogue",
+    "categoryEntries": [
+      {"name": "Commanders", "id": "e25e-c8c4-a359-8fc9", "hidden": false},
+      {"name": "Veteran Units", "id": "05b5-e65d-55f6-ba98", "hidden": false},
+      {"name": "Regular Units", "id": "9ce8-baf7-935f-058b", "hidden": false}
+    ],
+    "forceEntries": [
+      {
+        "name": "Standard MTF Unit",
+        "id": "7689-e79b-77a4-b2e0",
+        "hidden": false,
+        "categoryLinks": [
+          {"name": "Commanders", "id": "3055-b450-3576-8af7", "hidden": false, "targetId": "e25e-c8c4-a359-8fc9"},
+          {"name": "Veteran Units", "id": "7ca1-17fe-5caa-af68", "hidden": false, "targetId": "05b5-e65d-55f6-ba98"},
+          {"name": "Regular Units", "id": "19af-1576-7643-682e", "hidden": false, "targetId": "9ce8-baf7-935f-058b"}
+        ]
+      }
+    ],
+    "sharedProfiles": [
+      {
+        "name": "Rfile",
+        "id": "ba15-c9a9-076e-b8b8",
+        "hidden": false,
+        "typeId": "2a97-745a-d6ae-3fad",
+        "typeName": "Weapon",
+        "characteristics": [
+          {"name": "Range", "$text": "12", "typeId": "28ac-0754-369d-5aa6"},
+          {"name": "Strength", "$text": "2", "typeId": "c873-8ead-8fa4-1107"},
+          {"name": "Inaccuracy", "$text": "3", "typeId": "236d-de8a-045b-a916"},
+          {"name": "Lethality", "$text": "1", "typeId": "b12a-510f-75b3-fb88"}
+        ]
+      },
+      {
+        "name": "Light Machine Gun",
+        "id": "39bb-fc3a-146c-2a2a",
+        "hidden": false,
+        "typeId": "2a97-745a-d6ae-3fad",
+        "typeName": "Weapon",
+        "characteristics": [
+          {"name": "Range", "$text": "18", "typeId": "28ac-0754-369d-5aa6"},
+          {"name": "Strength", "$text": "4", "typeId": "c873-8ead-8fa4-1107"},
+          {"name": "Inaccuracy", "$text": "5", "typeId": "236d-de8a-045b-a916"},
+          {"name": "Lethality", "$text": "2", "typeId": "b12a-510f-75b3-fb88"}
+        ]
+      },
+      {
+        "name": "Sniper Rifle",
+        "id": "62f3-4532-4660-0c52",
+        "hidden": false,
+        "typeId": "2a97-745a-d6ae-3fad",
+        "typeName": "Weapon",
+        "characteristics": [
+          {"name": "Range", "$text": "24", "typeId": "28ac-0754-369d-5aa6"},
+          {"name": "Strength", "$text": "1", "typeId": "c873-8ead-8fa4-1107"},
+          {"name": "Inaccuracy", "$text": "2", "typeId": "236d-de8a-045b-a916"},
+          {"name": "Lethality", "$text": "2", "typeId": "b12a-510f-75b3-fb88"}
+        ]
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Anomalous Extraction Infantry",
+        "id": "cd8d-8f9f-ad7d-9b8d",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "Regular Units", "id": "bfae-2c1a-a75a-3285", "hidden": false, "primary": true, "targetId": "9ce8-baf7-935f-058b"}],
+        "constraints": [{"id": "764c-2abe-2ef9-2eae", "field": "selections", "scope": "9ce8-baf7-935f-058b", "shared": true, "type": "max", "value": 3}],
+        "profiles": [
+          {
+            "name": "Anomalous Extraction Infantry",
+            "id": "9df4-ac52-a78c-0660",
+            "hidden": false,
+            "typeId": "e269-6310-f011-664b",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "Movement", "$text": "8", "typeId": "ee4a-0f1f-8ed4-7b2c"},
+              {"name": "Toughness", "$text": "5", "typeId": "c3d5-3b5a-5ab5-ddbc"},
+              {"name": "Training", "$text": "4", "typeId": "d274-5c92-388d-8ee3"},
+              {"name": "Keywords", "$text": "Anomalous Warfare", "typeId": "bbd4-4d1d-663b-bcb2"}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "MTF Infantryman",
+            "id": "8d84-c707-cfc7-db59",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "59f6-187f-306f-4547", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 4},
+              {"id": "e29b-3401-5c88-d035", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 6}
+            ],
+            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 120}],
+            "infoLinks": [{"name": "Rfile", "id": "6267-2f28-6265-f303", "hidden": false, "targetId": "ba15-c9a9-076e-b8b8", "type": "profile"}],
+            "profiles": [
+              {
+                "name": "MTF Infantryman",
+                "id": "1ee3-6f23-3327-3522",
+                "hidden": false,
+                "typeId": "5d09-2cae-5242-4166",
+                "typeName": "Model",
+                "characteristics": [{"name": "Health", "$text": "3", "typeId": "0eed-bd85-b04c-a60a"}, {"name": "Size", "$text": "25 mm (base) 28 mm (height)", "typeId": "5261-108b-c0a2-b396"}]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

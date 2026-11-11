@@ -1,0 +1,48 @@
+{
+  "gameSystem": {
+    "name": "Teeth and Nail - the SCP Miniature Wargame",
+    "id": "sys-352a-7a4d-9d8b-ffc1",
+    "battleScribeVersion": "2.03",
+    "library": true,
+    "revision": 1,
+    "type": "gameSystem",
+    "costTypes": [{"name": "points", "id": "62bc-b394-a49e-35b6", "defaultCostLimit": -1}],
+    "profileTypes": [
+      {
+        "name": "Unit",
+        "id": "e269-6310-f011-664b",
+        "hidden": false,
+        "characteristicTypes": [
+          {"name": "Movement", "id": "ee4a-0f1f-8ed4-7b2c"},
+          {"name": "Toughness", "id": "c3d5-3b5a-5ab5-ddbc"},
+          {"name": "Training", "id": "d274-5c92-388d-8ee3"},
+          {"name": "Keywords", "id": "bbd4-4d1d-663b-bcb2"}
+        ]
+      },
+      {
+        "name": "Model",
+        "id": "5d09-2cae-5242-4166",
+        "hidden": false,
+        "characteristicTypes": [{"name": "Health", "id": "0eed-bd85-b04c-a60a"}, {"name": "Size", "id": "5261-108b-c0a2-b396"}]
+      },
+      {
+        "name": "Weapon",
+        "id": "2a97-745a-d6ae-3fad",
+        "hidden": false,
+        "characteristicTypes": [
+          {"name": "Range", "id": "28ac-0754-369d-5aa6"},
+          {"name": "Strength", "id": "c873-8ead-8fa4-1107"},
+          {"name": "Inaccuracy", "id": "236d-de8a-045b-a916"},
+          {"name": "Lethality", "id": "b12a-510f-75b3-fb88"}
+        ]
+      },
+      {
+        "name": "Modifier",
+        "id": "6a3b-e563-3f13-6a87",
+        "hidden": false,
+        "characteristicTypes": [{"name": "Target", "id": "b9d8-48dd-f4fe-dec4"}, {"name": "Value", "id": "efe0-e51b-5a6f-c8da"}]
+      },
+      {"name": "Speical Rule", "id": "425f-28ce-00a4-b4fa", "hidden": false, "characteristicTypes": [{"name": "Rule", "id": "89ed-d006-3f84-1055"}]}
+    ]
+  }
+}

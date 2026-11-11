@@ -78,7 +78,17 @@
         "targetId": "c674-eba8-b59d-82c6",
         "type": "selectionEntry"
       },
-      {"name": "M2A2 Bradley IFV", "id": "2498-fefd-ff48-2831", "hidden": false, "import": true, "targetId": "2eff-e6e8-9cfa-82b7", "type": "selectionEntry"}
+      {"name": "M2A2 Bradley IFV", "id": "2498-fefd-ff48-2831", "hidden": false, "import": true, "targetId": "2eff-e6e8-9cfa-82b7", "type": "selectionEntry"},
+      {
+        "name": "Anomaly Containment Specialists",
+        "id": "68d2-2e5d-fb49-0eaf",
+        "hidden": false,
+        "import": true,
+        "targetId": "8639-41fd-157c-a59a",
+        "type": "selectionEntry"
+      },
+      {"name": "Anti-Tank Specialists", "id": "c2f4-2cdc-62c3-ec33", "hidden": false, "import": true, "targetId": "d1e4-bc83-9921-6468", "type": "selectionEntry"},
+      {"name": "M1296 Dragoon", "id": "ffab-edb7-6fa1-7247", "hidden": false, "import": true, "targetId": "107f-edea-5b5d-ecea", "type": "selectionEntry"}
     ],
     "forceEntries": [
       {
@@ -336,11 +346,37 @@
         "typeId": "425f-28ce-00a4-b4fa",
         "typeName": "Special Rule",
         "characteristics": [{"name": "Rule", "$text": "This weapon is able to deal damage to units with Vehicle and Super-Heavy rules.", "typeId": "89ed-d006-3f84-1055"}]
+      },
+      {
+        "name": "RPG",
+        "id": "18f6-96a1-c5f9-d983",
+        "hidden": false,
+        "typeId": "2a97-745a-d6ae-3fad",
+        "typeName": "Weapon",
+        "characteristics": [
+          {"name": "Range", "$text": "18", "typeId": "28ac-0754-369d-5aa6"},
+          {"name": "Strength", "$text": "1", "typeId": "c873-8ead-8fa4-1107"},
+          {"name": "Inaccuracy", "$text": "3", "typeId": "236d-de8a-045b-a916"},
+          {"name": "Lethality", "$text": "8 + Armor Piercing", "typeId": "b12a-510f-75b3-fb88"}
+        ]
+      },
+      {
+        "name": "Team-Operated Light AT Auto-Cannon",
+        "id": "19d7-3915-2ec7-2372",
+        "hidden": false,
+        "typeId": "2a97-745a-d6ae-3fad",
+        "typeName": "Weapon",
+        "characteristics": [
+          {"name": "Range", "$text": "32", "typeId": "28ac-0754-369d-5aa6"},
+          {"name": "Strength", "$text": "3", "typeId": "c873-8ead-8fa4-1107"},
+          {"name": "Inaccuracy", "$text": "5", "typeId": "236d-de8a-045b-a916"},
+          {"name": "Lethality", "$text": "6 + Armor Piercing", "typeId": "b12a-510f-75b3-fb88"}
+        ]
       }
     ],
     "sharedSelectionEntries": [
       {
-        "name": "Regular MTF Infantry",
+        "name": "Regular MTF Infantry Squad",
         "id": "cd8d-8f9f-ad7d-9b8d",
         "hidden": false,
         "import": true,
@@ -402,6 +438,29 @@
               {
                 "name": "MTF Infantryman",
                 "id": "92bd-0402-f8bc-0bc6",
+                "hidden": false,
+                "typeId": "5d09-2cae-5242-4166",
+                "typeName": "Model",
+                "characteristics": [{"name": "Health", "$text": "3", "typeId": "0eed-bd85-b04c-a60a"}, {"name": "Size", "$text": "25 mm (base) 28 mm (height)", "typeId": "5261-108b-c0a2-b396"}]
+              }
+            ]
+          },
+          {
+            "name": "MTF Infantryman w/RPG",
+            "id": "0096-79f0-bda2-2279",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "a9af-e74b-575e-0c1f", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 0},
+              {"id": "cb27-9ceb-52c5-612a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
+            ],
+            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 20}],
+            "infoLinks": [{"name": "RPG", "id": "a0f8-e688-00e3-b1c5", "hidden": false, "targetId": "18f6-96a1-c5f9-d983", "type": "profile"}],
+            "profiles": [
+              {
+                "name": "MTF Infantryman",
+                "id": "1dc1-cc75-45ca-2373",
                 "hidden": false,
                 "typeId": "5d09-2cae-5242-4166",
                 "typeName": "Model",
@@ -961,7 +1020,7 @@
               {"id": "9c73-4503-81fb-314f-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "9c73-4503-81fb-314f-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 195}],
+            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 185}],
             "infoLinks": [
               {"name": "Suppressing Fire", "id": "d8b1-5b87-bf98-6d20", "hidden": false, "targetId": "a28b-d1aa-bcf3-ba1d", "type": "profile"},
               {"name": "Vehicle", "id": "620a-06e2-bf5c-8e37", "hidden": false, "targetId": "cc65-188f-d496-f47a", "type": "profile"},
@@ -975,7 +1034,7 @@
                 "typeId": "5d09-2cae-5242-4166",
                 "typeName": "Model",
                 "characteristics": [
-                  {"name": "Health", "$text": "16", "typeId": "0eed-bd85-b04c-a60a"},
+                  {"name": "Health", "$text": "18", "typeId": "0eed-bd85-b04c-a60a"},
                   {"name": "Size", "$text": "120 x 50 mm (base) 75 mm (height)", "typeId": "5261-108b-c0a2-b396"}
                 ]
               },
@@ -989,7 +1048,7 @@
                   {"name": "Range", "$text": "32", "typeId": "28ac-0754-369d-5aa6"},
                   {"name": "Strength", "$text": "6", "typeId": "c873-8ead-8fa4-1107"},
                   {"name": "Inaccuracy", "$text": "7", "typeId": "236d-de8a-045b-a916"},
-                  {"name": "Lethality", "$text": "2 + Armor Piercing", "typeId": "b12a-510f-75b3-fb88"}
+                  {"name": "Lethality", "$text": "2 ", "typeId": "b12a-510f-75b3-fb88"}
                 ]
               },
               {
@@ -1002,7 +1061,297 @@
                   {"name": "Range", "$text": "48", "typeId": "28ac-0754-369d-5aa6"},
                   {"name": "Strength", "$text": "2", "typeId": "c873-8ead-8fa4-1107"},
                   {"name": "Inaccuracy", "$text": "6", "typeId": "236d-de8a-045b-a916"},
-                  {"name": "Lethality", "$text": "4", "typeId": "b12a-510f-75b3-fb88"}
+                  {"name": "Lethality", "$text": "4 + Armor Piercing", "typeId": "b12a-510f-75b3-fb88"}
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Anti-Tank Infantry Squad",
+        "id": "d1e4-bc83-9921-6468",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "Veteran Units", "id": "a58f-0965-498b-7dbf", "hidden": false, "primary": true, "targetId": "05b5-e65d-55f6-ba98"}],
+        "displayCosts": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": -6}],
+        "profiles": [
+          {
+            "name": "Anti-Tank Specialists",
+            "id": "8b88-37c5-1ae6-7bf6",
+            "hidden": false,
+            "typeId": "e269-6310-f011-664b",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "Movement", "$text": "8", "typeId": "ee4a-0f1f-8ed4-7b2c"},
+              {"name": "Toughness", "$text": "5", "typeId": "c3d5-3b5a-5ab5-ddbc"},
+              {"name": "Training", "$text": "4", "typeId": "d274-5c92-388d-8ee3"},
+              {"name": "Keywords", "$text": "Techwarfare", "typeId": "bbd4-4d1d-663b-bcb2"}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "MTF Infantryman w/Rifle",
+            "id": "70c0-26bb-603c-1d54",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "a2cc-0c67-07f1-b8da", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
+              {"id": "c232-7d6f-a635-d748", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 4}
+            ],
+            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 12}],
+            "infoLinks": [{"name": "Rifile", "id": "6c20-ce3b-12da-e94a", "exportable": false, "hidden": false, "targetId": "ba15-c9a9-076e-b8b8", "type": "profile"}],
+            "profiles": [
+              {
+                "name": "MTF Infantryman",
+                "id": "bec1-7df9-a649-31b5",
+                "hidden": false,
+                "typeId": "5d09-2cae-5242-4166",
+                "typeName": "Model",
+                "characteristics": [{"name": "Health", "$text": "4", "typeId": "0eed-bd85-b04c-a60a"}, {"name": "Size", "$text": "25 mm (base) 28 mm (height)", "typeId": "5261-108b-c0a2-b396"}]
+              }
+            ]
+          },
+          {
+            "name": "Team-Operated Light AT Auto-Cannon",
+            "id": "4164-9186-325a-bd6f",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "4b69-8544-63aa-fc99-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "4b69-8544-63aa-fc99-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 44}],
+            "infoLinks": [
+              {"name": "Rifle (Extended Range)", "id": "625d-4ce3-31f8-decf", "hidden": false, "targetId": "0ef9-cdc6-55d8-c176", "type": "profile"},
+              {"name": "Elite", "id": "10aa-2f4a-905a-9ad4", "hidden": false, "targetId": "eb66-6f5d-b1cf-d1bb", "type": "profile"}
+            ],
+            "profiles": [
+              {
+                "name": "Team-Operated Light AT Auto-Cannon",
+                "id": "c780-e70b-0f63-131f",
+                "hidden": false,
+                "typeId": "5d09-2cae-5242-4166",
+                "typeName": "Model",
+                "characteristics": [{"name": "Health", "$text": "9", "typeId": "0eed-bd85-b04c-a60a"}, {"name": "Size", "$text": "50 mm (base) 28 mm (height)", "typeId": "5261-108b-c0a2-b396"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Anomaly Containment Squad",
+        "id": "8639-41fd-157c-a59a",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "Veteran Units", "id": "fce5-2825-764d-4f79", "hidden": false, "primary": true, "targetId": "05b5-e65d-55f6-ba98"}],
+        "profiles": [
+          {
+            "name": "Anomaly Containment Specialists",
+            "id": "0d70-90ea-21f1-caeb",
+            "hidden": false,
+            "typeId": "e269-6310-f011-664b",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "Movement", "$text": "12", "typeId": "ee4a-0f1f-8ed4-7b2c"},
+              {"name": "Toughness", "$text": "5", "typeId": "c3d5-3b5a-5ab5-ddbc"},
+              {"name": "Training", "$text": "3", "typeId": "d274-5c92-388d-8ee3"},
+              {"name": "Keywords", "$text": "any specialization", "typeId": "bbd4-4d1d-663b-bcb2"}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "MTF Veteran Infantryman w/Rifle",
+            "id": "35e0-4907-a07f-9267",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "15f8-4f4f-50ad-7328", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 4},
+              {"id": "c5c1-d156-787c-8a42", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 9}
+            ],
+            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 14}],
+            "infoLinks": [
+              {"name": "Rifile", "id": "ea14-0ccf-0044-6541", "exportable": false, "hidden": false, "targetId": "ba15-c9a9-076e-b8b8", "type": "profile"},
+              {"name": "Veteran", "id": "dbf6-8cec-a761-4d37", "hidden": false, "targetId": "e2ee-ccb3-270f-e3d7", "type": "profile"},
+              {"name": "Elite", "id": "2e35-c754-b6a3-81cb", "hidden": false, "targetId": "eb66-6f5d-b1cf-d1bb", "type": "profile"}
+            ],
+            "profiles": [
+              {
+                "name": "MTF Infantryman",
+                "id": "357f-ca9b-b3be-1821",
+                "hidden": false,
+                "typeId": "5d09-2cae-5242-4166",
+                "typeName": "Model",
+                "characteristics": [{"name": "Health", "$text": "4", "typeId": "0eed-bd85-b04c-a60a"}, {"name": "Size", "$text": "25 mm (base) 28 mm (height)", "typeId": "5261-108b-c0a2-b396"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Biowarfare Elite Purificators Squad",
+        "id": "e51b-2069-4336-41f3",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "Veteran Units", "id": "5a98-676f-9199-4502", "hidden": false, "primary": true, "targetId": "05b5-e65d-55f6-ba98"}],
+        "profiles": [
+          {
+            "name": "Biowarfare Elite Purificators Squad",
+            "id": "41fd-190b-f77c-6adf",
+            "hidden": false,
+            "typeId": "e269-6310-f011-664b",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "Movement", "$text": "8", "typeId": "ee4a-0f1f-8ed4-7b2c"},
+              {"name": "Toughness", "$text": "5", "typeId": "c3d5-3b5a-5ab5-ddbc"},
+              {"name": "Training", "$text": "4", "typeId": "d274-5c92-388d-8ee3"},
+              {"name": "Keywords", "$text": "Biowarfare", "typeId": "bbd4-4d1d-663b-bcb2"}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "MTF Biowarfare Specialist w/Rifle",
+            "id": "3a52-e03d-d330-6733",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "3b67-4b1e-9867-dbc6", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
+              {"id": "8b91-f472-e9c3-82d8", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 4}
+            ],
+            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 26}],
+            "infoLinks": [
+              {"name": "Rifile", "id": "4725-a4e1-a0c6-e58c", "hidden": false, "targetId": "ba15-c9a9-076e-b8b8", "type": "profile"},
+              {"name": "Elite", "id": "7b4e-0499-f73f-98de", "hidden": false, "targetId": "eb66-6f5d-b1cf-d1bb", "type": "profile"},
+              {"name": "Biowarfare Specialist", "id": "6e9a-a4b8-61d8-5e49", "hidden": false, "targetId": "3a4c-6306-1978-27ca", "type": "profile"},
+              {"name": "Veteran", "id": "719b-20eb-5db9-e67e", "hidden": false, "targetId": "e2ee-ccb3-270f-e3d7", "type": "profile"}
+            ],
+            "profiles": [
+              {
+                "name": "MTF Biowarfare Specialist",
+                "id": "4069-62e6-7490-9c1a",
+                "hidden": false,
+                "typeId": "5d09-2cae-5242-4166",
+                "typeName": "Model",
+                "characteristics": [{"name": "Health", "$text": "4", "typeId": "0eed-bd85-b04c-a60a"}, {"name": "Size", "$text": "25 mm (base) 28 mm (height)", "typeId": "5261-108b-c0a2-b396"}]
+              }
+            ]
+          },
+          {
+            "name": "MTF Purificator w/LMG",
+            "id": "6df5-e71b-b8ce-f549",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "cc49-a43d-4108-f558", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
+              {"id": "0589-c8e3-df3a-4f99", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}
+            ],
+            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 28}],
+            "infoLinks": [
+              {"name": "Light Machine Gun", "id": "9596-519c-0af1-a63a", "hidden": false, "targetId": "39bb-fc3a-146c-2a2a", "type": "profile"},
+              {"name": "Elite", "id": "4db1-02e8-7208-d744", "hidden": false, "targetId": "eb66-6f5d-b1cf-d1bb", "type": "profile"},
+              {"name": "Biowarfare Specialist", "id": "b7b0-9a2e-5f81-cd4f", "hidden": false, "targetId": "3a4c-6306-1978-27ca", "type": "profile"},
+              {"name": "Veteran", "id": "8a85-5e8e-710a-8ffc", "hidden": false, "targetId": "e2ee-ccb3-270f-e3d7", "type": "profile"}
+            ],
+            "profiles": [
+              {
+                "name": "MTF Biowarfare Specialist",
+                "id": "71e6-9ddf-4f84-5feb",
+                "hidden": false,
+                "typeId": "5d09-2cae-5242-4166",
+                "typeName": "Model",
+                "characteristics": [{"name": "Health", "$text": "4", "typeId": "0eed-bd85-b04c-a60a"}, {"name": "Size", "$text": "25 mm (base) 28 mm (height)", "typeId": "5261-108b-c0a2-b396"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "M1296 Dragoon",
+        "id": "107f-edea-5b5d-ecea",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "Regular Units", "id": "260c-0e13-9711-5774", "hidden": false, "primary": true, "targetId": "9ce8-baf7-935f-058b"}],
+        "constraints": [{"id": "aaf1-3a75-37ac-4953", "field": "selections", "scope": "9ce8-baf7-935f-058b", "shared": true, "type": "max", "value": 1}],
+        "profiles": [
+          {
+            "name": "M1296 Dragoon",
+            "id": "3e71-0e0f-f0e1-2572",
+            "hidden": false,
+            "typeId": "e269-6310-f011-664b",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "Movement", "$text": "22", "typeId": "ee4a-0f1f-8ed4-7b2c"},
+              {"name": "Toughness", "$text": "2", "typeId": "c3d5-3b5a-5ab5-ddbc"},
+              {"name": "Training", "$text": "5", "typeId": "d274-5c92-388d-8ee3"},
+              {"name": "Keywords", "$text": "Heavy Weapons", "typeId": "bbd4-4d1d-663b-bcb2"}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "M1296 Dragoon",
+            "id": "14d3-446b-9f0d-0120",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "1f72-2194-d1ba-5fd9-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "1f72-2194-d1ba-5fd9-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 210}],
+            "infoLinks": [
+              {"name": "Suppressing Fire", "id": "3b57-c9c6-ab3e-8a1c", "hidden": false, "targetId": "a28b-d1aa-bcf3-ba1d", "type": "profile"},
+              {"name": "Vehicle", "id": "7e32-f9a8-08a5-a075", "hidden": false, "targetId": "cc65-188f-d496-f47a", "type": "profile"},
+              {"name": "Superior Firepower", "id": "e569-d128-8ae5-468c", "hidden": false, "targetId": "3180-9bbf-ffdc-e378", "type": "profile"}
+            ],
+            "profiles": [
+              {
+                "name": "M1296 Dragoon",
+                "id": "0f8e-98f8-c2e2-8390",
+                "hidden": false,
+                "typeId": "5d09-2cae-5242-4166",
+                "typeName": "Model",
+                "characteristics": [
+                  {"name": "Health", "$text": "12", "typeId": "0eed-bd85-b04c-a60a"},
+                  {"name": "Size", "$text": "130 x 40 mm (base) 80mm (height)", "typeId": "5261-108b-c0a2-b396"}
+                ]
+              },
+              {
+                "name": "M1296 Dragoon's Heavy Machine Gun",
+                "id": "516e-96b5-e75b-f5fc",
+                "hidden": false,
+                "typeId": "2a97-745a-d6ae-3fad",
+                "typeName": "Weapon",
+                "characteristics": [
+                  {"name": "Range", "$text": "32", "typeId": "28ac-0754-369d-5aa6"},
+                  {"name": "Strength", "$text": "6", "typeId": "c873-8ead-8fa4-1107"},
+                  {"name": "Inaccuracy", "$text": "6", "typeId": "236d-de8a-045b-a916"},
+                  {"name": "Lethality", "$text": "2", "typeId": "b12a-510f-75b3-fb88"}
+                ]
+              },
+              {
+                "name": "M1296 Dragoon's Auto-Cannon",
+                "id": "04c1-deaa-c65a-4160",
+                "hidden": false,
+                "typeId": "2a97-745a-d6ae-3fad",
+                "typeName": "Weapon",
+                "characteristics": [
+                  {"name": "Range", "$text": "48", "typeId": "28ac-0754-369d-5aa6"},
+                  {"name": "Strength", "$text": "3", "typeId": "c873-8ead-8fa4-1107"},
+                  {"name": "Inaccuracy", "$text": "5", "typeId": "236d-de8a-045b-a916"},
+                  {"name": "Lethality", "$text": "6 + Armor Piercing", "typeId": "b12a-510f-75b3-fb88"}
                 ]
               }
             ]

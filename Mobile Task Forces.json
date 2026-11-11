@@ -30,7 +30,9 @@
         "targetId": "e5c8-ab3c-7145-4452",
         "type": "selectionEntry"
       },
-      {"name": "Heavy Machine Gun Team", "id": "a67e-c067-8f74-66c6", "hidden": false, "import": true, "targetId": "0d7a-f465-49dc-9035", "type": "selectionEntry"}
+      {"name": "Heavy Machine Gun Team", "id": "a67e-c067-8f74-66c6", "hidden": false, "import": true, "targetId": "0d7a-f465-49dc-9035", "type": "selectionEntry"},
+      {"name": "Sergeant", "id": "e66f-3199-8993-76dc", "hidden": false, "import": true, "targetId": "ce94-bedc-9cc7-29ca", "type": "selectionEntry"},
+      {"name": "Lieutenant", "id": "e5b0-366a-b170-d502", "hidden": false, "import": true, "targetId": "8f33-4f42-d89e-2d59", "type": "selectionEntry"}
     ],
     "forceEntries": [
       {

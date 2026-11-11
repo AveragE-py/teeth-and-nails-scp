@@ -1,6 +1,6 @@
 {
   "catalogue": {
-    "name": "Biowarfare Specialized Squad",
+    "name": "Mobile Task Forces",
     "id": "700f-7143-d4d0-73ff",
     "battleScribeVersion": "2.03",
     "gameSystemId": "sys-352a-7a4d-9d8b-ffc1",
@@ -21,7 +21,16 @@
         "import": true,
         "targetId": "cd8d-8f9f-ad7d-9b8d",
         "type": "selectionEntry"
-      }
+      },
+      {
+        "name": "Biowarfare Specialized Squad",
+        "id": "77e6-1c7c-d6cb-c0f2",
+        "hidden": false,
+        "import": true,
+        "targetId": "e5c8-ab3c-7145-4452",
+        "type": "selectionEntry"
+      },
+      {"name": "Heavy Machine Gun Team", "id": "a67e-c067-8f74-66c6", "hidden": false, "import": true, "targetId": "0d7a-f465-49dc-9035", "type": "selectionEntry"}
     ],
     "forceEntries": [
       {
@@ -37,7 +46,7 @@
     ],
     "sharedProfiles": [
       {
-        "name": "Rfile",
+        "name": "Rifile",
         "id": "ba15-c9a9-076e-b8b8",
         "hidden": false,
         "typeId": "2a97-745a-d6ae-3fad",
@@ -100,6 +109,19 @@
             "$text": "This unit can reroll any test once a round. you cannot reroll a test that was already rerolled using this rule.",
             "typeId": "89ed-d006-3f84-1055"
           }
+        ]
+      },
+      {
+        "name": "Heavy Machine Gun",
+        "id": "0daf-e008-d071-11bd",
+        "hidden": false,
+        "typeId": "2a97-745a-d6ae-3fad",
+        "typeName": "Weapon",
+        "characteristics": [
+          {"name": "Range", "$text": "32", "typeId": "28ac-0754-369d-5aa6"},
+          {"name": "Strength", "$text": "5", "typeId": "c873-8ead-8fa4-1107"},
+          {"name": "Inaccuracy", "$text": "7", "typeId": "236d-de8a-045b-a916"},
+          {"name": "Lethality", "$text": "2", "typeId": "b12a-510f-75b3-fb88"}
         ]
       }
     ],
@@ -182,6 +204,7 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
+        "categoryLinks": [{"name": "Regular Units", "id": "ce2b-2770-a956-92f8", "hidden": false, "primary": true, "targetId": "9ce8-baf7-935f-058b"}],
         "constraints": [{"id": "610d-83e3-d116-f618", "field": "selections", "scope": "9ce8-baf7-935f-058b", "shared": true, "type": "max", "value": 3}],
         "profiles": [
           {
@@ -191,7 +214,7 @@
             "typeId": "e269-6310-f011-664b",
             "typeName": "Unit",
             "characteristics": [
-              {"name": "Movement", "$text": "6", "typeId": "ee4a-0f1f-8ed4-7b2c"},
+              {"name": "Movement", "$text": "8", "typeId": "ee4a-0f1f-8ed4-7b2c"},
               {"name": "Toughness", "$text": "5", "typeId": "c3d5-3b5a-5ab5-ddbc"},
               {"name": "Training", "$text": "3", "typeId": "d274-5c92-388d-8ee3"},
               {"name": "Keywords", "$text": "Biowarfare", "typeId": "bbd4-4d1d-663b-bcb2"}
@@ -251,7 +274,58 @@
         ]
       },
       {"name": "Techwarfare Specialized Squad", "id": "50cf-2e06-dfaf-1b25", "hidden": false, "import": true, "type": "upgrade"},
-      {"name": "Heavy Machine Gun Team", "id": "0d7a-f465-49dc-9035", "hidden": false, "import": true, "type": "upgrade"}
+      {
+        "name": "Heavy Machine Gun Team",
+        "id": "0d7a-f465-49dc-9035",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Regular Units", "id": "4018-6715-27d8-1e0c", "hidden": false, "primary": true, "targetId": "9ce8-baf7-935f-058b"}],
+        "constraints": [
+          {"id": "6f00-a642-2350-eebb-min", "field": "selections", "scope": "9ce8-baf7-935f-058b", "shared": true, "type": "min", "value": 1},
+          {"id": "6f00-a642-2350-eebb-max", "field": "selections", "scope": "9ce8-baf7-935f-058b", "shared": true, "type": "max", "value": 1}
+        ],
+        "profiles": [
+          {
+            "name": "Heavy Machine Gun",
+            "id": "8c2e-0cf6-a173-1037",
+            "hidden": false,
+            "typeId": "e269-6310-f011-664b",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "Movement", "$text": "5", "typeId": "ee4a-0f1f-8ed4-7b2c"},
+              {"name": "Toughness", "$text": "5", "typeId": "c3d5-3b5a-5ab5-ddbc"},
+              {"name": "Training", "$text": "4", "typeId": "d274-5c92-388d-8ee3"},
+              {"name": "Keywords", "$text": "Heavy Weapons", "typeId": "bbd4-4d1d-663b-bcb2"}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Heavy Machine Gun",
+            "id": "6f44-f6d8-0746-6310",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "4abf-429a-6690-1a96", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
+              {"id": "0eb1-25eb-7058-b547", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 4}
+            ],
+            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 22}],
+            "infoLinks": [{"name": "Heavy Machine Gun", "id": "a6c7-3f81-ba2a-8328", "hidden": false, "targetId": "0daf-e008-d071-11bd", "type": "profile"}],
+            "profiles": [
+              {
+                "name": "Heavy Machine Gun",
+                "id": "d0d4-7cce-51f4-fbbc",
+                "hidden": false,
+                "typeId": "5d09-2cae-5242-4166",
+                "typeName": "Model",
+                "characteristics": [{"name": "Health", "$text": "3", "typeId": "0eed-bd85-b04c-a60a"}, {"name": "Size", "$text": "50 mm (base) 28 mm (height)", "typeId": "5261-108b-c0a2-b396"}]
+              }
+            ]
+          }
+        ]
+      }
     ]
   }
 }

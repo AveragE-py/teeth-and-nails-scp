@@ -654,7 +654,7 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
-        "categoryLinks": [{"name": "Veteran Units", "id": "f5a9-0163-bd70-8df0", "hidden": false, "primary": true, "targetId": "05b5-e65d-55f6-ba98"}],
+        "categoryLinks": [{"name": "Regular Units", "id": "dd94-4df3-3289-603f", "hidden": false, "primary": true, "targetId": "9ce8-baf7-935f-058b"}],
         "profiles": [
           {
             "name": "Heavy-Armored Assault Squad",
@@ -761,7 +761,7 @@
         "constraints": [{"id": "73f6-64a4-5dff-f83b", "field": "selections", "scope": "9ce8-baf7-935f-058b", "shared": true, "type": "max", "value": 3}],
         "profiles": [
           {
-            "name": "Techwarfare Specialized Squad",
+            "name": "Assault Squad with Flamewthrowers",
             "id": "d951-ffa0-46e9-d908",
             "hidden": false,
             "typeId": "e269-6310-f011-664b",
@@ -815,7 +815,7 @@
         "constraints": [{"id": "cf4b-d6ce-9156-fbc9", "field": "selections", "scope": "9ce8-baf7-935f-058b", "shared": true, "type": "max", "value": 3}],
         "profiles": [
           {
-            "name": "Techwarfare Specialized Squad",
+            "name": "Assault Squad with Flamewthrowers",
             "id": "2dc9-4db9-f062-639b",
             "hidden": false,
             "typeId": "e269-6310-f011-664b",

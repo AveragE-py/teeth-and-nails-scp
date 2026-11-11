@@ -6,12 +6,22 @@
     "gameSystemId": "sys-352a-7a4d-9d8b-ffc1",
     "gameSystemRevision": 1,
     "library": false,
-    "revision": 1,
+    "revision": 2,
     "type": "catalogue",
     "categoryEntries": [
       {"name": "Commanders", "id": "e25e-c8c4-a359-8fc9", "hidden": false},
       {"name": "Veteran Units", "id": "05b5-e65d-55f6-ba98", "hidden": false},
       {"name": "Regular Units", "id": "9ce8-baf7-935f-058b", "hidden": false}
+    ],
+    "entryLinks": [
+      {
+        "name": "Anomalous Extraction Infantry",
+        "id": "613c-43d3-59dd-0274",
+        "hidden": false,
+        "import": true,
+        "targetId": "cd8d-8f9f-ad7d-9b8d",
+        "type": "selectionEntry"
+      }
     ],
     "forceEntries": [
       {

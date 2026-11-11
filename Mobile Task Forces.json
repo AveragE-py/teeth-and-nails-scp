@@ -77,7 +77,8 @@
         "import": true,
         "targetId": "c674-eba8-b59d-82c6",
         "type": "selectionEntry"
-      }
+      },
+      {"name": "M2A2 Bradley IFV", "id": "2498-fefd-ff48-2831", "hidden": false, "import": true, "targetId": "2eff-e6e8-9cfa-82b7", "type": "selectionEntry"}
     ],
     "forceEntries": [
       {
@@ -166,7 +167,7 @@
         "typeName": "Weapon",
         "characteristics": [
           {"name": "Range", "$text": "32", "typeId": "28ac-0754-369d-5aa6"},
-          {"name": "Strength", "$text": "5", "typeId": "c873-8ead-8fa4-1107"},
+          {"name": "Strength", "$text": "6", "typeId": "c873-8ead-8fa4-1107"},
           {"name": "Inaccuracy", "$text": "7", "typeId": "236d-de8a-045b-a916"},
           {"name": "Lethality", "$text": "2", "typeId": "b12a-510f-75b3-fb88"}
         ]
@@ -223,7 +224,7 @@
         "characteristics": [
           {
             "name": "Rule",
-            "$text": "When you deal at least one damage to any opponent's unit with a ranged attack, this unit gains Suffering Modifier. This unit cannot gain Suffering Modifier because of opponent's attack with this Special Rule.",
+            "$text": "When you deal at least one damage to any opponent's unit with a ranged attack, this unit gains a Suffering Modifier. This unit cannot gain Suffering Modifier because of an opponent's attack with this Special Rule.",
             "typeId": "89ed-d006-3f84-1055"
           }
         ]
@@ -267,6 +268,66 @@
           {"name": "Inaccuracy", "$text": "1", "typeId": "236d-de8a-045b-a916"},
           {"name": "Lethality", "$text": "6", "typeId": "b12a-510f-75b3-fb88"}
         ]
+      },
+      {
+        "name": "Heavy Fire",
+        "id": "41ba-5a5f-bd7a-79dc",
+        "hidden": false,
+        "typeId": "425f-28ce-00a4-b4fa",
+        "typeName": "Special Rule",
+        "characteristics": [{"name": "Rule", "$text": "", "typeId": "89ed-d006-3f84-1055"}]
+      },
+      {
+        "name": "Shaken",
+        "id": "26f3-7ef9-3ddd-770b",
+        "hidden": false,
+        "typeId": "6a3b-e563-3f13-6a87",
+        "typeName": "Modifier",
+        "characteristics": [{"name": "Target", "$text": "Training", "typeId": "b9d8-48dd-f4fe-dec4"}, {"name": "Value", "$text": "+2", "typeId": "efe0-e51b-5a6f-c8da"}]
+      },
+      {
+        "name": "Suffering",
+        "id": "ee44-c6f8-aa55-471b",
+        "hidden": false,
+        "typeId": "6a3b-e563-3f13-6a87",
+        "typeName": "Modifier",
+        "characteristics": [{"name": "Target", "$text": "Toughness", "typeId": "b9d8-48dd-f4fe-dec4"}, {"name": "Value", "$text": "-1", "typeId": "efe0-e51b-5a6f-c8da"}]
+      },
+      {
+        "name": "Mobile",
+        "id": "e710-2294-efca-6725",
+        "hidden": false,
+        "typeId": "6a3b-e563-3f13-6a87",
+        "typeName": "Modifier",
+        "characteristics": [{"name": "Target", "$text": "Movement", "typeId": "b9d8-48dd-f4fe-dec4"}, {"name": "Value", "$text": "+3", "typeId": "efe0-e51b-5a6f-c8da"}]
+      },
+      {
+        "name": "Vehicle",
+        "id": "cc65-188f-d496-f47a",
+        "hidden": false,
+        "typeId": "425f-28ce-00a4-b4fa",
+        "typeName": "Special Rule",
+        "characteristics": [
+          {
+            "name": "Rule",
+            "$text": "this unit cannot be a target of charge, this unit cannot charge, this unit cannot melee, this unit gains Mobile modifier if it did not shoot in the previous round (and loses the Mobile modifier when shoots), this unit cannot be designated as target by ranged attack if the attacker’s weapon does not have the Armor Piercing Special Rule.",
+            "typeId": "89ed-d006-3f84-1055"
+          }
+        ]
+      },
+      {
+        "name": "Superior Firepower",
+        "id": "3180-9bbf-ffdc-e378",
+        "hidden": false,
+        "typeId": "425f-28ce-00a4-b4fa",
+        "typeName": "Special Rule",
+        "characteristics": [
+          {
+            "name": "Rule",
+            "$text": "If you deal any damage to the target during shooting, this target gains Shaken modifier for the next round.",
+            "typeId": "89ed-d006-3f84-1055"
+          }
+        ]
       }
     ],
     "sharedSelectionEntries": [
@@ -288,7 +349,7 @@
             "characteristics": [
               {"name": "Movement", "$text": "8", "typeId": "ee4a-0f1f-8ed4-7b2c"},
               {"name": "Toughness", "$text": "5", "typeId": "c3d5-3b5a-5ab5-ddbc"},
-              {"name": "Training", "$text": "4", "typeId": "d274-5c92-388d-8ee3"},
+              {"name": "Training", "$text": "6", "typeId": "d274-5c92-388d-8ee3"},
               {"name": "Keywords", "$text": "any specialization", "typeId": "bbd4-4d1d-663b-bcb2"}
             ]
           }
@@ -360,7 +421,7 @@
             "characteristics": [
               {"name": "Movement", "$text": "8", "typeId": "ee4a-0f1f-8ed4-7b2c"},
               {"name": "Toughness", "$text": "5", "typeId": "c3d5-3b5a-5ab5-ddbc"},
-              {"name": "Training", "$text": "3", "typeId": "d274-5c92-388d-8ee3"},
+              {"name": "Training", "$text": "5", "typeId": "d274-5c92-388d-8ee3"},
               {"name": "Keywords", "$text": "Biowarfare", "typeId": "bbd4-4d1d-663b-bcb2"}
             ]
           }
@@ -436,7 +497,7 @@
             "characteristics": [
               {"name": "Movement", "$text": "8", "typeId": "ee4a-0f1f-8ed4-7b2c"},
               {"name": "Toughness", "$text": "5", "typeId": "c3d5-3b5a-5ab5-ddbc"},
-              {"name": "Training", "$text": "3", "typeId": "d274-5c92-388d-8ee3"},
+              {"name": "Training", "$text": "5", "typeId": "d274-5c92-388d-8ee3"},
               {"name": "Keywords", "$text": "Techwarfare", "typeId": "bbd4-4d1d-663b-bcb2"}
             ]
           }
@@ -515,7 +576,7 @@
             "characteristics": [
               {"name": "Movement", "$text": "5", "typeId": "ee4a-0f1f-8ed4-7b2c"},
               {"name": "Toughness", "$text": "5", "typeId": "c3d5-3b5a-5ab5-ddbc"},
-              {"name": "Training", "$text": "4", "typeId": "d274-5c92-388d-8ee3"},
+              {"name": "Training", "$text": "6", "typeId": "d274-5c92-388d-8ee3"},
               {"name": "Keywords", "$text": "Heavy Weapons", "typeId": "bbd4-4d1d-663b-bcb2"}
             ]
           }
@@ -543,7 +604,7 @@
                 "hidden": false,
                 "typeId": "5d09-2cae-5242-4166",
                 "typeName": "Model",
-                "characteristics": [{"name": "Health", "$text": "3", "typeId": "0eed-bd85-b04c-a60a"}, {"name": "Size", "$text": "50 mm (base) 28 mm (height)", "typeId": "5261-108b-c0a2-b396"}]
+                "characteristics": [{"name": "Health", "$text": "9", "typeId": "0eed-bd85-b04c-a60a"}, {"name": "Size", "$text": "50 mm (base) 28 mm (height)", "typeId": "5261-108b-c0a2-b396"}]
               }
             ]
           }
@@ -566,7 +627,7 @@
             "characteristics": [
               {"name": "Movement", "$text": "9", "typeId": "ee4a-0f1f-8ed4-7b2c"},
               {"name": "Toughness", "$text": "5", "typeId": "c3d5-3b5a-5ab5-ddbc"},
-              {"name": "Training", "$text": "2", "typeId": "d274-5c92-388d-8ee3"},
+              {"name": "Training", "$text": "4", "typeId": "d274-5c92-388d-8ee3"},
               {"name": "Keywords", "$text": "any specialization", "typeId": "bbd4-4d1d-663b-bcb2"}
             ]
           }
@@ -617,7 +678,7 @@
             "characteristics": [
               {"name": "Movement", "$text": "9", "typeId": "ee4a-0f1f-8ed4-7b2c"},
               {"name": "Toughness", "$text": "5", "typeId": "c3d5-3b5a-5ab5-ddbc"},
-              {"name": "Training", "$text": "3", "typeId": "d274-5c92-388d-8ee3"},
+              {"name": "Training", "$text": "5", "typeId": "d274-5c92-388d-8ee3"},
               {"name": "Keywords", "$text": "any specialization", "typeId": "bbd4-4d1d-663b-bcb2"}
             ]
           }
@@ -665,7 +726,7 @@
             "characteristics": [
               {"name": "Movement", "$text": "7", "typeId": "ee4a-0f1f-8ed4-7b2c"},
               {"name": "Toughness", "$text": "4", "typeId": "c3d5-3b5a-5ab5-ddbc"},
-              {"name": "Training", "$text": "4", "typeId": "d274-5c92-388d-8ee3"},
+              {"name": "Training", "$text": "6", "typeId": "d274-5c92-388d-8ee3"},
               {"name": "Keywords", "$text": "any specialization", "typeId": "bbd4-4d1d-663b-bcb2"}
             ]
           }
@@ -716,7 +777,7 @@
             "characteristics": [
               {"name": "Movement", "$text": "7", "typeId": "ee4a-0f1f-8ed4-7b2c"},
               {"name": "Toughness", "$text": "4", "typeId": "c3d5-3b5a-5ab5-ddbc"},
-              {"name": "Training", "$text": "4", "typeId": "d274-5c92-388d-8ee3"},
+              {"name": "Training", "$text": "5", "typeId": "d274-5c92-388d-8ee3"},
               {"name": "Keywords", "$text": "any specialization", "typeId": "bbd4-4d1d-663b-bcb2"}
             ]
           }
@@ -769,7 +830,7 @@
             "characteristics": [
               {"name": "Movement", "$text": "8", "typeId": "ee4a-0f1f-8ed4-7b2c"},
               {"name": "Toughness", "$text": "5", "typeId": "c3d5-3b5a-5ab5-ddbc"},
-              {"name": "Training", "$text": "3", "typeId": "d274-5c92-388d-8ee3"},
+              {"name": "Training", "$text": "5", "typeId": "d274-5c92-388d-8ee3"},
               {"name": "Keywords", "$text": "Techwarfare", "typeId": "bbd4-4d1d-663b-bcb2"}
             ]
           }
@@ -782,7 +843,7 @@
             "import": true,
             "type": "upgrade",
             "constraints": [
-              {"id": "f837-1af7-2147-2445", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "f837-1af7-2147-2445", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
               {"id": "386e-164d-109b-9a4b", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}
             ],
             "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 36}],
@@ -794,7 +855,7 @@
             ],
             "profiles": [
               {
-                "name": "MTF Techwarfare Specialist w/Flamethrowers",
+                "name": "MTF Techwarfare Specialist w/Flamethrower",
                 "id": "0248-f9bc-ae6a-eeec",
                 "hidden": false,
                 "typeId": "5d09-2cae-5242-4166",
@@ -823,7 +884,7 @@
             "characteristics": [
               {"name": "Movement", "$text": "8", "typeId": "ee4a-0f1f-8ed4-7b2c"},
               {"name": "Toughness", "$text": "5", "typeId": "c3d5-3b5a-5ab5-ddbc"},
-              {"name": "Training", "$text": "3", "typeId": "d274-5c92-388d-8ee3"},
+              {"name": "Training", "$text": "5", "typeId": "d274-5c92-388d-8ee3"},
               {"name": "Keywords", "$text": "Biowarfare", "typeId": "bbd4-4d1d-663b-bcb2"}
             ]
           }
@@ -843,17 +904,97 @@
             "infoLinks": [
               {"name": "Biowarfare Specialist", "id": "7836-5de9-bafd-4f99", "hidden": false, "targetId": "3a4c-6306-1978-27ca", "type": "profile"},
               {"name": "Elite", "id": "d184-d4d1-f2fc-619d", "hidden": false, "targetId": "eb66-6f5d-b1cf-d1bb", "type": "profile"},
-              {"name": "Heavy Armor", "id": "2bac-93f1-a5bf-532a", "hidden": false, "targetId": "21dc-a79d-9410-e761", "type": "profile"},
               {"name": "Gas Granade Launcher", "id": "774f-4b4d-23c2-87a4", "hidden": false, "targetId": "e297-46f6-804c-8f71", "type": "profile"}
             ],
             "profiles": [
               {
-                "name": "MTF Biowarfare Specialist w/Flamethrowers",
+                "name": "MTF Biowarfare Specialist w/Gas Granade Launcher",
                 "id": "dd2d-c018-f5ad-b102",
                 "hidden": false,
                 "typeId": "5d09-2cae-5242-4166",
                 "typeName": "Model",
-                "characteristics": [{"name": "Health", "$text": "5", "typeId": "0eed-bd85-b04c-a60a"}, {"name": "Size", "$text": "25 mm (base) 28 mm (height)", "typeId": "5261-108b-c0a2-b396"}]
+                "characteristics": [{"name": "Health", "$text": "3", "typeId": "0eed-bd85-b04c-a60a"}, {"name": "Size", "$text": "25 mm (base) 28 mm (height)", "typeId": "5261-108b-c0a2-b396"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "M2A2 Bradley IFV",
+        "id": "2eff-e6e8-9cfa-82b7",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "Regular Units", "id": "3a1e-01e8-526e-45e8", "hidden": false, "primary": true, "targetId": "9ce8-baf7-935f-058b"}],
+        "constraints": [{"id": "2f61-b675-21df-a792", "field": "selections", "scope": "9ce8-baf7-935f-058b", "shared": true, "type": "max", "value": 3}],
+        "profiles": [
+          {
+            "name": "M2A2 Bradley IFV",
+            "id": "9ddb-2e5d-33c3-fcae",
+            "hidden": false,
+            "typeId": "e269-6310-f011-664b",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "Movement", "$text": "16", "typeId": "ee4a-0f1f-8ed4-7b2c"},
+              {"name": "Toughness", "$text": "2", "typeId": "c3d5-3b5a-5ab5-ddbc"},
+              {"name": "Training", "$text": "5", "typeId": "d274-5c92-388d-8ee3"},
+              {"name": "Keywords", "$text": "Heavy Weapons", "typeId": "bbd4-4d1d-663b-bcb2"}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "M2A2 Bradley IFV",
+            "id": "544f-a1ba-4d3a-ff20",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "9c73-4503-81fb-314f-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "9c73-4503-81fb-314f-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 195}],
+            "infoLinks": [
+              {"name": "Suppressing Fire", "id": "d8b1-5b87-bf98-6d20", "hidden": false, "targetId": "a28b-d1aa-bcf3-ba1d", "type": "profile"},
+              {"name": "Vehicle", "id": "620a-06e2-bf5c-8e37", "hidden": false, "targetId": "cc65-188f-d496-f47a", "type": "profile"}
+            ],
+            "profiles": [
+              {
+                "name": "M2A2 Bradley IFV",
+                "id": "feec-1549-a230-197e",
+                "hidden": false,
+                "typeId": "5d09-2cae-5242-4166",
+                "typeName": "Model",
+                "characteristics": [
+                  {"name": "Health", "$text": "22", "typeId": "0eed-bd85-b04c-a60a"},
+                  {"name": "Size", "$text": "120 x 50 mm (base) 75 mm (height)", "typeId": "5261-108b-c0a2-b396"}
+                ]
+              },
+              {
+                "name": "M2A2 Bradley's Heavy Machine Gun",
+                "id": "32d8-96e0-0d38-c768",
+                "hidden": false,
+                "typeId": "2a97-745a-d6ae-3fad",
+                "typeName": "Weapon",
+                "characteristics": [
+                  {"name": "Range", "$text": "32", "typeId": "28ac-0754-369d-5aa6"},
+                  {"name": "Strength", "$text": "6", "typeId": "c873-8ead-8fa4-1107"},
+                  {"name": "Inaccuracy", "$text": "7", "typeId": "236d-de8a-045b-a916"},
+                  {"name": "Lethality", "$text": "2", "typeId": "b12a-510f-75b3-fb88"}
+                ]
+              },
+              {
+                "name": "M2A2 Bradley's Auto-Cannon",
+                "id": "54b3-3821-112b-c6c2",
+                "hidden": false,
+                "typeId": "2a97-745a-d6ae-3fad",
+                "typeName": "Weapon",
+                "characteristics": [
+                  {"name": "Range", "$text": "48", "typeId": "28ac-0754-369d-5aa6"},
+                  {"name": "Strength", "$text": "2", "typeId": "c873-8ead-8fa4-1107"},
+                  {"name": "Inaccuracy", "$text": "6", "typeId": "236d-de8a-045b-a916"},
+                  {"name": "Lethality", "$text": "4", "typeId": "b12a-510f-75b3-fb88"}
+                ]
               }
             ]
           }

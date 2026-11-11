@@ -111,7 +111,7 @@
               {"id": "59f6-187f-306f-4547", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 4},
               {"id": "e29b-3401-5c88-d035", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 6}
             ],
-            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 120}],
+            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 12}],
             "infoLinks": [{"name": "Rfile", "id": "6267-2f28-6265-f303", "hidden": false, "targetId": "ba15-c9a9-076e-b8b8", "type": "profile"}],
             "profiles": [
               {

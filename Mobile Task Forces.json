@@ -234,7 +234,7 @@
         "characteristics": [
           {
             "name": "Rule",
-            "$text": "When you deal at least one damage to any opponent's unit with a ranged attack, this unit gains a Suffering Modifier. This unit cannot gain Suffering Modifier because of an opponent's attack with this Special Rule.",
+            "$text": "When this unit deals at least one damage to an opponent's unit with a ranged attack, the target gains a Suffering Modifier.. This unit cannot gain Suffering Modifier because of an opponent's attack with this Special Rule.",
             "typeId": "89ed-d006-3f84-1055"
           }
         ]

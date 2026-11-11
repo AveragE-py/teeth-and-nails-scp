@@ -183,7 +183,7 @@
               {"id": "ece1-8231-81fc-da51", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 0},
               {"id": "9c43-0050-57b8-c0d2", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
             ],
-            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 12}],
+            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 16}],
             "infoLinks": [{"name": "Light Machine Gun", "id": "caa0-cee0-9cd5-5b15", "hidden": false, "targetId": "39bb-fc3a-146c-2a2a", "type": "profile"}],
             "profiles": [
               {
@@ -255,7 +255,7 @@
               {"id": "39f1-830e-5fc5-bda8", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "f8ad-e109-9fd9-9398", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
             ],
-            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 18}],
+            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 22}],
             "infoLinks": [
               {"name": "Submachine Gun", "id": "60bd-7857-03cf-4b15", "hidden": false, "targetId": "ffeb-14f9-11db-d308", "type": "profile"},
               {"name": "Elite", "id": "6a12-0d95-07bd-a202", "hidden": false, "targetId": "eb66-6f5d-b1cf-d1bb", "type": "profile"}
@@ -281,10 +281,7 @@
         "import": true,
         "type": "upgrade",
         "categoryLinks": [{"name": "Regular Units", "id": "4018-6715-27d8-1e0c", "hidden": false, "primary": true, "targetId": "9ce8-baf7-935f-058b"}],
-        "constraints": [
-          {"id": "6f00-a642-2350-eebb-min", "field": "selections", "scope": "9ce8-baf7-935f-058b", "shared": true, "type": "min", "value": 1},
-          {"id": "6f00-a642-2350-eebb-max", "field": "selections", "scope": "9ce8-baf7-935f-058b", "shared": true, "type": "max", "value": 1}
-        ],
+        "constraints": [{"id": "6f00-a642-2350-eebb", "field": "selections", "scope": "9ce8-baf7-935f-058b", "shared": true, "type": "max", "value": 3}],
         "profiles": [
           {
             "name": "Heavy Machine Gun",
@@ -308,10 +305,10 @@
             "import": true,
             "type": "upgrade",
             "constraints": [
-              {"id": "4abf-429a-6690-1a96", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
-              {"id": "0eb1-25eb-7058-b547", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 4}
+              {"id": "4abf-429a-6690-1a96-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "4abf-429a-6690-1a96-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 22}],
+            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 36}],
             "infoLinks": [{"name": "Heavy Machine Gun", "id": "a6c7-3f81-ba2a-8328", "hidden": false, "targetId": "0daf-e008-d071-11bd", "type": "profile"}],
             "profiles": [
               {

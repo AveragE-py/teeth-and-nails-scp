@@ -32,7 +32,15 @@
       },
       {"name": "Heavy Machine Gun Team", "id": "a67e-c067-8f74-66c6", "hidden": false, "import": true, "targetId": "0d7a-f465-49dc-9035", "type": "selectionEntry"},
       {"name": "Sergeant", "id": "e66f-3199-8993-76dc", "hidden": false, "import": true, "targetId": "ce94-bedc-9cc7-29ca", "type": "selectionEntry"},
-      {"name": "Lieutenant", "id": "e5b0-366a-b170-d502", "hidden": false, "import": true, "targetId": "8f33-4f42-d89e-2d59", "type": "selectionEntry"}
+      {"name": "Lieutenant", "id": "e5b0-366a-b170-d502", "hidden": false, "import": true, "targetId": "8f33-4f42-d89e-2d59", "type": "selectionEntry"},
+      {
+        "name": "Techwarfare Specialized Squad",
+        "id": "c2bc-1a26-5b2f-5972",
+        "hidden": false,
+        "import": true,
+        "targetId": "50cf-2e06-dfaf-1b25",
+        "type": "selectionEntry"
+      }
     ],
     "forceEntries": [
       {
@@ -104,7 +112,7 @@
         "id": "eb66-6f5d-b1cf-d1bb",
         "hidden": false,
         "typeId": "425f-28ce-00a4-b4fa",
-        "typeName": "Speical Rule",
+        "typeName": "Special Rule",
         "characteristics": [
           {
             "name": "Rule",
@@ -124,6 +132,41 @@
           {"name": "Strength", "$text": "5", "typeId": "c873-8ead-8fa4-1107"},
           {"name": "Inaccuracy", "$text": "7", "typeId": "236d-de8a-045b-a916"},
           {"name": "Lethality", "$text": "2", "typeId": "b12a-510f-75b3-fb88"}
+        ]
+      },
+      {
+        "name": "Rifle (Extended Range)",
+        "id": "0ef9-cdc6-55d8-c176",
+        "hidden": false,
+        "typeId": "2a97-745a-d6ae-3fad",
+        "typeName": "Weapon",
+        "characteristics": [
+          {"name": "Range", "$text": "16", "typeId": "28ac-0754-369d-5aa6"},
+          {"name": "Strength", "$text": "2", "typeId": "c873-8ead-8fa4-1107"},
+          {"name": "Inaccuracy", "$text": "3", "typeId": "236d-de8a-045b-a916"},
+          {"name": "Lethality", "$text": "1", "typeId": "b12a-510f-75b3-fb88"}
+        ]
+      },
+      {
+        "name": "Heavy Armor",
+        "id": "21dc-a79d-9410-e761",
+        "hidden": false,
+        "typeId": "425f-28ce-00a4-b4fa",
+        "typeName": "Special Rule",
+        "characteristics": [{"name": "Rule", "$text": "This unit can auto-success one ranged damage test per every attack targeted at this unit.", "typeId": "89ed-d006-3f84-1055"}]
+      },
+      {
+        "name": "Suppressing Fire",
+        "id": "a28b-d1aa-bcf3-ba1d",
+        "hidden": false,
+        "typeId": "425f-28ce-00a4-b4fa",
+        "typeName": "Special Rule",
+        "characteristics": [
+          {
+            "name": "Rule",
+            "$text": "If you fail to deal any damage to the target during shooting, the target loses ability to perform shooting action this round.",
+            "typeId": "89ed-d006-3f84-1055"
+          }
         ]
       }
     ],
@@ -275,7 +318,84 @@
           }
         ]
       },
-      {"name": "Techwarfare Specialized Squad", "id": "50cf-2e06-dfaf-1b25", "hidden": false, "import": true, "type": "upgrade"},
+      {
+        "name": "Techwarfare Specialized Squad",
+        "id": "50cf-2e06-dfaf-1b25",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "8701-5c8e-43af-3155", "field": "selections", "scope": "9ce8-baf7-935f-058b", "shared": true, "type": "max", "value": 3}],
+        "profiles": [
+          {
+            "name": "Techwarfare Specialized Squad",
+            "id": "60d5-d991-ac57-199a",
+            "hidden": false,
+            "typeId": "e269-6310-f011-664b",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "Movement", "$text": "8", "typeId": "ee4a-0f1f-8ed4-7b2c"},
+              {"name": "Toughness", "$text": "5", "typeId": "c3d5-3b5a-5ab5-ddbc"},
+              {"name": "Training", "$text": "3", "typeId": "d274-5c92-388d-8ee3"},
+              {"name": "Keywords", "$text": "Techwarfare", "typeId": "bbd4-4d1d-663b-bcb2"}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "MTF Techwarfare Specialist",
+            "id": "5be6-8f77-1e52-5a1b",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "e6a3-9843-82da-fce3", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "0d6f-cb93-cca6-18cb", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
+            ],
+            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 26}],
+            "infoLinks": [
+              {"name": "Rifile", "id": "3286-5a7f-2f47-da86", "hidden": false, "targetId": "ba15-c9a9-076e-b8b8", "type": "profile"},
+              {"name": "Elite", "id": "a438-be34-c3cf-487c", "hidden": false, "targetId": "eb66-6f5d-b1cf-d1bb", "type": "profile"},
+              {"name": "Heavy Armor", "id": "0c16-f902-01e0-5418", "hidden": false, "targetId": "21dc-a79d-9410-e761", "type": "profile"}
+            ],
+            "profiles": [
+              {
+                "name": "MTF Techwarfare Specialist",
+                "id": "9761-334d-dbdf-b02e",
+                "hidden": false,
+                "typeId": "5d09-2cae-5242-4166",
+                "typeName": "Model",
+                "characteristics": [{"name": "Health", "$text": "4", "typeId": "0eed-bd85-b04c-a60a"}, {"name": "Size", "$text": "25 mm (base) 28 mm (height)", "typeId": "5261-108b-c0a2-b396"}]
+              }
+            ]
+          },
+          {
+            "name": "MTF Infantryman",
+            "id": "d90b-66b1-2c78-bd8e",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "1238-09de-76f7-a0a0", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
+              {"id": "34b1-fc01-743b-82c8", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 4}
+            ],
+            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 16}],
+            "infoLinks": [
+              {"name": "Rifle (Extended Range)", "id": "db3c-2ced-7919-d7d2", "exportable": false, "hidden": false, "targetId": "0ef9-cdc6-55d8-c176", "type": "profile"},
+              {"name": "Heavy Armor", "id": "e219-0947-3c15-a797", "hidden": false, "targetId": "21dc-a79d-9410-e761", "type": "profile"}
+            ],
+            "profiles": [
+              {
+                "name": "MTF Infantryman",
+                "id": "fac3-b3e9-468d-f049",
+                "hidden": false,
+                "typeId": "5d09-2cae-5242-4166",
+                "typeName": "Model",
+                "characteristics": [{"name": "Health", "$text": "3", "typeId": "0eed-bd85-b04c-a60a"}, {"name": "Size", "$text": "25 mm (base) 28 mm (height)", "typeId": "5261-108b-c0a2-b396"}]
+              }
+            ]
+          }
+        ]
+      },
       {
         "name": "Heavy Machine Gun Team",
         "id": "0d7a-f465-49dc-9035",
@@ -311,7 +431,10 @@
               {"id": "4abf-429a-6690-1a96-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 36}],
-            "infoLinks": [{"name": "Heavy Machine Gun", "id": "a6c7-3f81-ba2a-8328", "hidden": false, "targetId": "0daf-e008-d071-11bd", "type": "profile"}],
+            "infoLinks": [
+              {"name": "Heavy Machine Gun", "id": "a6c7-3f81-ba2a-8328", "hidden": false, "targetId": "0daf-e008-d071-11bd", "type": "profile"},
+              {"name": "Suppressing Fire", "id": "0df1-d85d-1da3-1d33", "hidden": false, "targetId": "a28b-d1aa-bcf3-ba1d", "type": "profile"}
+            ],
             "profiles": [
               {
                 "name": "Heavy Machine Gun",

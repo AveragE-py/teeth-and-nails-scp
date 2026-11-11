@@ -42,7 +42,7 @@
         "hidden": false,
         "characteristicTypes": [{"name": "Target", "id": "b9d8-48dd-f4fe-dec4"}, {"name": "Value", "id": "efe0-e51b-5a6f-c8da"}]
       },
-      {"name": "Speical Rule", "id": "425f-28ce-00a4-b4fa", "hidden": false, "characteristicTypes": [{"name": "Rule", "id": "89ed-d006-3f84-1055"}]}
+      {"name": "Special Rule", "id": "425f-28ce-00a4-b4fa", "hidden": false, "characteristicTypes": [{"name": "Rule", "id": "89ed-d006-3f84-1055"}]}
     ]
   }
 }

@@ -61,6 +61,22 @@
         "import": true,
         "targetId": "79d5-34ef-e51a-9ebc",
         "type": "selectionEntry"
+      },
+      {
+        "name": "Assault Squad with Flamewthrowers",
+        "id": "ef6d-7433-c01b-0967",
+        "hidden": false,
+        "import": true,
+        "targetId": "9b78-9dba-fbfe-2037",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Assault Squad with Gas Granade Launchers",
+        "id": "19d1-5316-59ae-afd3",
+        "hidden": false,
+        "import": true,
+        "targetId": "c674-eba8-b59d-82c6",
+        "type": "selectionEntry"
       }
     ],
     "forceEntries": [
@@ -83,7 +99,7 @@
         "typeId": "2a97-745a-d6ae-3fad",
         "typeName": "Weapon",
         "characteristics": [
-          {"name": "Range", "$text": "12", "typeId": "28ac-0754-369d-5aa6"},
+          {"name": "Range", "$text": "14", "typeId": "28ac-0754-369d-5aa6"},
           {"name": "Strength", "$text": "2", "typeId": "c873-8ead-8fa4-1107"},
           {"name": "Inaccuracy", "$text": "3", "typeId": "236d-de8a-045b-a916"},
           {"name": "Lethality", "$text": "1", "typeId": "b12a-510f-75b3-fb88"}
@@ -96,7 +112,7 @@
         "typeId": "2a97-745a-d6ae-3fad",
         "typeName": "Weapon",
         "characteristics": [
-          {"name": "Range", "$text": "18", "typeId": "28ac-0754-369d-5aa6"},
+          {"name": "Range", "$text": "20", "typeId": "28ac-0754-369d-5aa6"},
           {"name": "Strength", "$text": "4", "typeId": "c873-8ead-8fa4-1107"},
           {"name": "Inaccuracy", "$text": "5", "typeId": "236d-de8a-045b-a916"},
           {"name": "Lethality", "$text": "2", "typeId": "b12a-510f-75b3-fb88"}
@@ -109,7 +125,7 @@
         "typeId": "2a97-745a-d6ae-3fad",
         "typeName": "Weapon",
         "characteristics": [
-          {"name": "Range", "$text": "24", "typeId": "28ac-0754-369d-5aa6"},
+          {"name": "Range", "$text": "30", "typeId": "28ac-0754-369d-5aa6"},
           {"name": "Strength", "$text": "1", "typeId": "c873-8ead-8fa4-1107"},
           {"name": "Inaccuracy", "$text": "2", "typeId": "236d-de8a-045b-a916"},
           {"name": "Lethality", "$text": "2", "typeId": "b12a-510f-75b3-fb88"}
@@ -122,7 +138,7 @@
         "typeId": "2a97-745a-d6ae-3fad",
         "typeName": "Weapon",
         "characteristics": [
-          {"name": "Range", "$text": "8", "typeId": "28ac-0754-369d-5aa6"},
+          {"name": "Range", "$text": "10", "typeId": "28ac-0754-369d-5aa6"},
           {"name": "Strength", "$text": "3", "typeId": "c873-8ead-8fa4-1107"},
           {"name": "Inaccuracy", "$text": "4", "typeId": "236d-de8a-045b-a916"},
           {"name": "Lethality", "$text": "1", "typeId": "b12a-510f-75b3-fb88"}
@@ -162,7 +178,7 @@
         "typeId": "2a97-745a-d6ae-3fad",
         "typeName": "Weapon",
         "characteristics": [
-          {"name": "Range", "$text": "16", "typeId": "28ac-0754-369d-5aa6"},
+          {"name": "Range", "$text": "18", "typeId": "28ac-0754-369d-5aa6"},
           {"name": "Strength", "$text": "2", "typeId": "c873-8ead-8fa4-1107"},
           {"name": "Inaccuracy", "$text": "3", "typeId": "236d-de8a-045b-a916"},
           {"name": "Lethality", "$text": "1", "typeId": "b12a-510f-75b3-fb88"}
@@ -197,11 +213,65 @@
         "typeId": "425f-28ce-00a4-b4fa",
         "typeName": "Special Rule",
         "characteristics": [{"name": "Rule", "$text": "When performing a Shooting Test, this unit may reroll the result once.", "typeId": "89ed-d006-3f84-1055"}]
+      },
+      {
+        "name": "Biowarfare Specialist",
+        "id": "3a4c-6306-1978-27ca",
+        "hidden": false,
+        "typeId": "425f-28ce-00a4-b4fa",
+        "typeName": "Special Rule",
+        "characteristics": [
+          {
+            "name": "Rule",
+            "$text": "When you deal at least one damage to any opponent's unit with a ranged attack, this unit gains Suffering Modifier. This unit cannot gain Suffering Modifier because of opponent's attack with this Special Rule.",
+            "typeId": "89ed-d006-3f84-1055"
+          }
+        ]
+      },
+      {
+        "name": "Flamethrower",
+        "id": "34c4-a7f7-0644-170b",
+        "hidden": false,
+        "typeId": "2a97-745a-d6ae-3fad",
+        "typeName": "Weapon",
+        "characteristics": [
+          {"name": "Range", "$text": "12", "typeId": "28ac-0754-369d-5aa6"},
+          {"name": "Strength", "$text": "5", "typeId": "c873-8ead-8fa4-1107"},
+          {"name": "Inaccuracy", "$text": "4", "typeId": "236d-de8a-045b-a916"},
+          {"name": "Lethality", "$text": "4", "typeId": "b12a-510f-75b3-fb88"}
+        ]
+      },
+      {
+        "name": "Flamethrower",
+        "id": "1400-54e1-ca71-eea4",
+        "hidden": false,
+        "typeId": "425f-28ce-00a4-b4fa",
+        "typeName": "Special Rule",
+        "characteristics": [
+          {
+            "name": "Rule",
+            "$text": "This weapon gains +3 Lethality if the target is closer to the shooter than 6 inches. The distance is measured from any model having a weapon with Flamethrower rule.",
+            "typeId": "89ed-d006-3f84-1055"
+          }
+        ]
+      },
+      {
+        "name": "Gas Granade Launcher",
+        "id": "e297-46f6-804c-8f71",
+        "hidden": false,
+        "typeId": "2a97-745a-d6ae-3fad",
+        "typeName": "Weapon",
+        "characteristics": [
+          {"name": "Range", "$text": "24", "typeId": "28ac-0754-369d-5aa6"},
+          {"name": "Strength", "$text": "2", "typeId": "c873-8ead-8fa4-1107"},
+          {"name": "Inaccuracy", "$text": "1", "typeId": "236d-de8a-045b-a916"},
+          {"name": "Lethality", "$text": "6", "typeId": "b12a-510f-75b3-fb88"}
+        ]
       }
     ],
     "sharedSelectionEntries": [
       {
-        "name": "Anomalous Extraction Squad",
+        "name": "Regular MTF Infantry",
         "id": "cd8d-8f9f-ad7d-9b8d",
         "hidden": false,
         "import": true,
@@ -210,7 +280,7 @@
         "constraints": [{"id": "764c-2abe-2ef9-2eae", "field": "selections", "scope": "9ce8-baf7-935f-058b", "shared": true, "type": "max", "value": 3}],
         "profiles": [
           {
-            "name": "Anomalous Extraction Infantry",
+            "name": "Regular MTF Infantry",
             "id": "9df4-ac52-a78c-0660",
             "hidden": false,
             "typeId": "e269-6310-f011-664b",
@@ -219,7 +289,7 @@
               {"name": "Movement", "$text": "8", "typeId": "ee4a-0f1f-8ed4-7b2c"},
               {"name": "Toughness", "$text": "5", "typeId": "c3d5-3b5a-5ab5-ddbc"},
               {"name": "Training", "$text": "4", "typeId": "d274-5c92-388d-8ee3"},
-              {"name": "Keywords", "$text": "Anomalous Warfare", "typeId": "bbd4-4d1d-663b-bcb2"}
+              {"name": "Keywords", "$text": "any specialization", "typeId": "bbd4-4d1d-663b-bcb2"}
             ]
           }
         ],
@@ -329,10 +399,11 @@
               {"id": "39f1-830e-5fc5-bda8", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "f8ad-e109-9fd9-9398", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
             ],
-            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 22}],
+            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 24}],
             "infoLinks": [
               {"name": "Submachine Gun", "id": "60bd-7857-03cf-4b15", "hidden": false, "targetId": "ffeb-14f9-11db-d308", "type": "profile"},
-              {"name": "Elite", "id": "6a12-0d95-07bd-a202", "hidden": false, "targetId": "eb66-6f5d-b1cf-d1bb", "type": "profile"}
+              {"name": "Elite", "id": "6a12-0d95-07bd-a202", "hidden": false, "targetId": "eb66-6f5d-b1cf-d1bb", "type": "profile"},
+              {"name": "Biowarfare Specialist", "id": "bda4-ef20-1b94-76ae", "hidden": false, "targetId": "3a4c-6306-1978-27ca", "type": "profile"}
             ],
             "profiles": [
               {
@@ -420,7 +491,7 @@
                 "hidden": false,
                 "typeId": "5d09-2cae-5242-4166",
                 "typeName": "Model",
-                "characteristics": [{"name": "Health", "$text": "3", "typeId": "0eed-bd85-b04c-a60a"}, {"name": "Size", "$text": "25 mm (base) 28 mm (height)", "typeId": "5261-108b-c0a2-b396"}]
+                "characteristics": [{"name": "Health", "$text": "4", "typeId": "0eed-bd85-b04c-a60a"}, {"name": "Size", "$text": "25 mm (base) 28 mm (height)", "typeId": "5261-108b-c0a2-b396"}]
               }
             ]
           }
@@ -584,7 +655,6 @@
         "import": true,
         "type": "upgrade",
         "categoryLinks": [{"name": "Veteran Units", "id": "f5a9-0163-bd70-8df0", "hidden": false, "primary": true, "targetId": "05b5-e65d-55f6-ba98"}],
-        "constraints": [{"id": "71fc-882d-d978-d6ba", "field": "selections", "scope": "9ce8-baf7-935f-058b", "shared": true, "type": "max", "value": 3}],
         "profiles": [
           {
             "name": "Heavy-Armored Assault Squad",
@@ -596,13 +666,13 @@
               {"name": "Movement", "$text": "7", "typeId": "ee4a-0f1f-8ed4-7b2c"},
               {"name": "Toughness", "$text": "4", "typeId": "c3d5-3b5a-5ab5-ddbc"},
               {"name": "Training", "$text": "4", "typeId": "d274-5c92-388d-8ee3"},
-              {"name": "Keywords", "$text": "Techwarfare", "typeId": "bbd4-4d1d-663b-bcb2"}
+              {"name": "Keywords", "$text": "any specialization", "typeId": "bbd4-4d1d-663b-bcb2"}
             ]
           }
         ],
         "selectionEntries": [
           {
-            "name": "MTF Infantryman w/Rifle & Heavy-Armor",
+            "name": "MTF Heavy-Armored Infantryman w/Rifle & Heavy-Armor",
             "id": "16e2-b866-5e02-cafc",
             "hidden": false,
             "import": true,
@@ -618,12 +688,12 @@
             ],
             "profiles": [
               {
-                "name": "MTF Infantryman",
+                "name": "MTF Heavy-Armored Infantryman",
                 "id": "afce-3b0d-e17b-91e9",
                 "hidden": false,
                 "typeId": "5d09-2cae-5242-4166",
                 "typeName": "Model",
-                "characteristics": [{"name": "Health", "$text": "3", "typeId": "0eed-bd85-b04c-a60a"}, {"name": "Size", "$text": "25 mm (base) 28 mm (height)", "typeId": "5261-108b-c0a2-b396"}]
+                "characteristics": [{"name": "Health", "$text": "5", "typeId": "0eed-bd85-b04c-a60a"}, {"name": "Size", "$text": "25 mm (base) 28 mm (height)", "typeId": "5261-108b-c0a2-b396"}]
               }
             ]
           }
@@ -636,7 +706,6 @@
         "import": true,
         "type": "upgrade",
         "categoryLinks": [{"name": "Veteran Units", "id": "e90b-8512-8a71-9f96", "hidden": false, "primary": true, "targetId": "05b5-e65d-55f6-ba98"}],
-        "constraints": [{"id": "9638-90de-8871-2639", "field": "selections", "scope": "9ce8-baf7-935f-058b", "shared": true, "type": "max", "value": 3}],
         "profiles": [
           {
             "name": "Heavy-Armored Assault Squad",
@@ -648,13 +717,13 @@
               {"name": "Movement", "$text": "7", "typeId": "ee4a-0f1f-8ed4-7b2c"},
               {"name": "Toughness", "$text": "4", "typeId": "c3d5-3b5a-5ab5-ddbc"},
               {"name": "Training", "$text": "4", "typeId": "d274-5c92-388d-8ee3"},
-              {"name": "Keywords", "$text": "Techwarfare", "typeId": "bbd4-4d1d-663b-bcb2"}
+              {"name": "Keywords", "$text": "any specialization", "typeId": "bbd4-4d1d-663b-bcb2"}
             ]
           }
         ],
         "selectionEntries": [
           {
-            "name": "MTF Infantryman w/Rifle & Heavy-Armor",
+            "name": "MTF Heavy-Armored Infantryman w/Rifle & Heavy-Armor",
             "id": "6a21-4b3a-4b2e-f8b2",
             "hidden": false,
             "import": true,
@@ -671,12 +740,120 @@
             ],
             "profiles": [
               {
-                "name": "MTF Infantryman",
+                "name": "MTF Heavy-Armored Infantryman",
                 "id": "a215-4a40-991a-0572",
                 "hidden": false,
                 "typeId": "5d09-2cae-5242-4166",
                 "typeName": "Model",
-                "characteristics": [{"name": "Health", "$text": "3", "typeId": "0eed-bd85-b04c-a60a"}, {"name": "Size", "$text": "25 mm (base) 28 mm (height)", "typeId": "5261-108b-c0a2-b396"}]
+                "characteristics": [{"name": "Health", "$text": "5", "typeId": "0eed-bd85-b04c-a60a"}, {"name": "Size", "$text": "25 mm (base) 28 mm (height)", "typeId": "5261-108b-c0a2-b396"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Assault Squad with Flamewthrowers",
+        "id": "9b78-9dba-fbfe-2037",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Regular Units", "id": "0051-e0c8-6f4d-ea6b", "hidden": false, "primary": true, "targetId": "9ce8-baf7-935f-058b"}],
+        "constraints": [{"id": "73f6-64a4-5dff-f83b", "field": "selections", "scope": "9ce8-baf7-935f-058b", "shared": true, "type": "max", "value": 3}],
+        "profiles": [
+          {
+            "name": "Techwarfare Specialized Squad",
+            "id": "d951-ffa0-46e9-d908",
+            "hidden": false,
+            "typeId": "e269-6310-f011-664b",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "Movement", "$text": "8", "typeId": "ee4a-0f1f-8ed4-7b2c"},
+              {"name": "Toughness", "$text": "5", "typeId": "c3d5-3b5a-5ab5-ddbc"},
+              {"name": "Training", "$text": "3", "typeId": "d274-5c92-388d-8ee3"},
+              {"name": "Keywords", "$text": "Techwarfare", "typeId": "bbd4-4d1d-663b-bcb2"}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "MTF Techwarfare Specialist w/Flamethrower",
+            "id": "8ad5-09c5-3ee6-89c9",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "f837-1af7-2147-2445", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "386e-164d-109b-9a4b", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}
+            ],
+            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 36}],
+            "infoLinks": [
+              {"name": "Flamethrower", "id": "10d2-dc10-7bd1-6d11", "hidden": false, "targetId": "34c4-a7f7-0644-170b", "type": "profile"},
+              {"name": "Elite", "id": "aaed-112b-59f2-2b36", "hidden": false, "targetId": "eb66-6f5d-b1cf-d1bb", "type": "profile"},
+              {"name": "Heavy Armor", "id": "1ccb-f98a-a37d-69c1", "hidden": false, "targetId": "21dc-a79d-9410-e761", "type": "profile"},
+              {"name": "Flamethrower", "id": "e722-a0c8-123c-53c7", "hidden": false, "targetId": "1400-54e1-ca71-eea4", "type": "profile"}
+            ],
+            "profiles": [
+              {
+                "name": "MTF Techwarfare Specialist w/Flamethrowers",
+                "id": "0248-f9bc-ae6a-eeec",
+                "hidden": false,
+                "typeId": "5d09-2cae-5242-4166",
+                "typeName": "Model",
+                "characteristics": [{"name": "Health", "$text": "5", "typeId": "0eed-bd85-b04c-a60a"}, {"name": "Size", "$text": "25 mm (base) 28 mm (height)", "typeId": "5261-108b-c0a2-b396"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Assault Squad with Gas Granade Launchers",
+        "id": "c674-eba8-b59d-82c6",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Regular Units", "id": "fb59-15c6-2811-42a5", "hidden": false, "primary": true, "targetId": "9ce8-baf7-935f-058b"}],
+        "constraints": [{"id": "cf4b-d6ce-9156-fbc9", "field": "selections", "scope": "9ce8-baf7-935f-058b", "shared": true, "type": "max", "value": 3}],
+        "profiles": [
+          {
+            "name": "Techwarfare Specialized Squad",
+            "id": "2dc9-4db9-f062-639b",
+            "hidden": false,
+            "typeId": "e269-6310-f011-664b",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "Movement", "$text": "8", "typeId": "ee4a-0f1f-8ed4-7b2c"},
+              {"name": "Toughness", "$text": "5", "typeId": "c3d5-3b5a-5ab5-ddbc"},
+              {"name": "Training", "$text": "3", "typeId": "d274-5c92-388d-8ee3"},
+              {"name": "Keywords", "$text": "Biowarfare", "typeId": "bbd4-4d1d-663b-bcb2"}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "MTF Biowarfare Specialist w/Gas Granade Launcher",
+            "id": "805c-db4c-2e84-24b7",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "1ae5-2963-ea7d-74fb", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
+              {"id": "9f57-eda8-2917-00b5", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}
+            ],
+            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 36}],
+            "infoLinks": [
+              {"name": "Biowarfare Specialist", "id": "7836-5de9-bafd-4f99", "hidden": false, "targetId": "3a4c-6306-1978-27ca", "type": "profile"},
+              {"name": "Elite", "id": "d184-d4d1-f2fc-619d", "hidden": false, "targetId": "eb66-6f5d-b1cf-d1bb", "type": "profile"},
+              {"name": "Heavy Armor", "id": "2bac-93f1-a5bf-532a", "hidden": false, "targetId": "21dc-a79d-9410-e761", "type": "profile"},
+              {"name": "Gas Granade Launcher", "id": "774f-4b4d-23c2-87a4", "hidden": false, "targetId": "e297-46f6-804c-8f71", "type": "profile"}
+            ],
+            "profiles": [
+              {
+                "name": "MTF Biowarfare Specialist w/Flamethrowers",
+                "id": "dd2d-c018-f5ad-b102",
+                "hidden": false,
+                "typeId": "5d09-2cae-5242-4166",
+                "typeName": "Model",
+                "characteristics": [{"name": "Health", "$text": "5", "typeId": "0eed-bd85-b04c-a60a"}, {"name": "Size", "$text": "25 mm (base) 28 mm (height)", "typeId": "5261-108b-c0a2-b396"}]
               }
             ]
           }

@@ -926,7 +926,7 @@
         "import": true,
         "type": "unit",
         "categoryLinks": [{"name": "Regular Units", "id": "3a1e-01e8-526e-45e8", "hidden": false, "primary": true, "targetId": "9ce8-baf7-935f-058b"}],
-        "constraints": [{"id": "2f61-b675-21df-a792", "field": "selections", "scope": "9ce8-baf7-935f-058b", "shared": true, "type": "max", "value": 3}],
+        "constraints": [{"id": "2f61-b675-21df-a792", "field": "selections", "scope": "9ce8-baf7-935f-058b", "shared": true, "type": "max", "value": 1}],
         "profiles": [
           {
             "name": "M2A2 Bradley IFV",
@@ -956,7 +956,8 @@
             "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 195}],
             "infoLinks": [
               {"name": "Suppressing Fire", "id": "d8b1-5b87-bf98-6d20", "hidden": false, "targetId": "a28b-d1aa-bcf3-ba1d", "type": "profile"},
-              {"name": "Vehicle", "id": "620a-06e2-bf5c-8e37", "hidden": false, "targetId": "cc65-188f-d496-f47a", "type": "profile"}
+              {"name": "Vehicle", "id": "620a-06e2-bf5c-8e37", "hidden": false, "targetId": "cc65-188f-d496-f47a", "type": "profile"},
+              {"name": "Superior Firepower", "id": "ed4b-4f60-3f82-207e", "hidden": false, "targetId": "3180-9bbf-ffdc-e378", "type": "profile"}
             ],
             "profiles": [
               {

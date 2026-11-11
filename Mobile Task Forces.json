@@ -328,6 +328,14 @@
             "typeId": "89ed-d006-3f84-1055"
           }
         ]
+      },
+      {
+        "name": "Armor Piercing",
+        "id": "abe5-fee9-d82a-5aed",
+        "hidden": false,
+        "typeId": "425f-28ce-00a4-b4fa",
+        "typeName": "Special Rule",
+        "characteristics": [{"name": "Rule", "$text": "This weapon is able to deal damage to units with Vehicle and Super-Heavy rules.", "typeId": "89ed-d006-3f84-1055"}]
       }
     ],
     "sharedSelectionEntries": [
@@ -967,7 +975,7 @@
                 "typeId": "5d09-2cae-5242-4166",
                 "typeName": "Model",
                 "characteristics": [
-                  {"name": "Health", "$text": "22", "typeId": "0eed-bd85-b04c-a60a"},
+                  {"name": "Health", "$text": "16", "typeId": "0eed-bd85-b04c-a60a"},
                   {"name": "Size", "$text": "120 x 50 mm (base) 75 mm (height)", "typeId": "5261-108b-c0a2-b396"}
                 ]
               },
@@ -981,7 +989,7 @@
                   {"name": "Range", "$text": "32", "typeId": "28ac-0754-369d-5aa6"},
                   {"name": "Strength", "$text": "6", "typeId": "c873-8ead-8fa4-1107"},
                   {"name": "Inaccuracy", "$text": "7", "typeId": "236d-de8a-045b-a916"},
-                  {"name": "Lethality", "$text": "2", "typeId": "b12a-510f-75b3-fb88"}
+                  {"name": "Lethality", "$text": "2 + Armor Piercing", "typeId": "b12a-510f-75b3-fb88"}
                 ]
               },
               {

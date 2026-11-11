@@ -324,6 +324,7 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
+        "categoryLinks": [{"name": "Regular Units", "id": "9667-068f-733f-3cac", "hidden": false, "primary": true, "targetId": "9ce8-baf7-935f-058b"}],
         "constraints": [{"id": "8701-5c8e-43af-3155", "field": "selections", "scope": "9ce8-baf7-935f-058b", "shared": true, "type": "max", "value": 3}],
         "profiles": [
           {

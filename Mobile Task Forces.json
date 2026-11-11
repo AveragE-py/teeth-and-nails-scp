@@ -196,7 +196,7 @@
         ],
         "selectionEntries": [
           {
-            "name": "MTF Infantryman",
+            "name": "MTF Infantryman w/LMG",
             "id": "8d84-c707-cfc7-db59",
             "hidden": false,
             "import": true,
@@ -219,7 +219,7 @@
             ]
           },
           {
-            "name": "MTF Infantryman",
+            "name": "MTF Infantryman w/Rifle",
             "id": "4c71-f352-b960-5ef7",
             "hidden": false,
             "import": true,
@@ -268,7 +268,7 @@
         ],
         "selectionEntries": [
           {
-            "name": "MTF Infantryman",
+            "name": "MTF Infantryman w/Rifle",
             "id": "197c-635f-c971-d079",
             "hidden": false,
             "import": true,
@@ -291,7 +291,7 @@
             ]
           },
           {
-            "name": "MTF Biowarfare Specialist",
+            "name": "MTF Biowarfare Specialist w/SMG",
             "id": "fb3c-ce13-022c-1761",
             "hidden": false,
             "import": true,
@@ -343,7 +343,7 @@
         ],
         "selectionEntries": [
           {
-            "name": "MTF Techwarfare Specialist",
+            "name": "MTF Techwarfare Specialist w/Long-Range Rifle",
             "id": "5be6-8f77-1e52-5a1b",
             "hidden": false,
             "import": true,
@@ -352,9 +352,9 @@
               {"id": "e6a3-9843-82da-fce3", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "0d6f-cb93-cca6-18cb", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
             ],
-            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 26}],
+            "costs": [{"name": "points", "typeId": "62bc-b394-a49e-35b6", "value": 28}],
             "infoLinks": [
-              {"name": "Rifile", "id": "3286-5a7f-2f47-da86", "hidden": false, "targetId": "ba15-c9a9-076e-b8b8", "type": "profile"},
+              {"name": "Rifle (Extended Range)", "id": "3286-5a7f-2f47-da86", "hidden": false, "targetId": "0ef9-cdc6-55d8-c176", "type": "profile"},
               {"name": "Elite", "id": "a438-be34-c3cf-487c", "hidden": false, "targetId": "eb66-6f5d-b1cf-d1bb", "type": "profile"},
               {"name": "Heavy Armor", "id": "0c16-f902-01e0-5418", "hidden": false, "targetId": "21dc-a79d-9410-e761", "type": "profile"}
             ],
@@ -370,7 +370,7 @@
             ]
           },
           {
-            "name": "MTF Infantryman",
+            "name": "MTF Infantryman w/Long-Range Rifle",
             "id": "d90b-66b1-2c78-bd8e",
             "hidden": false,
             "import": true,
